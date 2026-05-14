@@ -1,21 +1,21 @@
 import { Shield, CheckCircle, ArrowRight, Clock, Globe, Lock, FileCheck } from 'lucide-react';
 
-// Logo Component
+// Logo Component - Tıklanabilir link
 function Logo() {
   return (
     <div className="flex items-center gap-3">
       <div className="bg-gradient-to-br from-green-600 to-emerald-700 w-12 h-12 rounded-lg flex items-center justify-center">
         <span className="text-white font-bold text-xl">i</span>
       </div>
-      <div>
+      <a href="/" className="hover:opacity-80 transition-opacity">
         <div className="text-xl font-bold text-white leading-tight">inşa.systems</div>
         <div className="text-xs text-green-200">e-Dönüşüm Çözümleri</div>
-      </div>
+      </a>
     </div>
   );
 }
 
-// Navigation Bar
+// Navigation Bar - İletişim linki düzeltildi
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
@@ -27,7 +27,7 @@ function Navbar() {
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors font-medium">e-Bilişim</a>
-          <a href="#iletisim" className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
+          <a href="/#iletisim" className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
         </div>
       </div>
     </nav>
@@ -38,7 +38,7 @@ const services = [
   {
     title: 'KEP (Kayıtlı Elektronik Posta)',
     description: 'Yasal, hızlı, güvenli ve tasarruflu bir iletişim sistemi. Her türlü bildirim, başvuru, dilekçe, sözleşme, fatura ve ihtar gibi resmi belge paylaşımınızı KEP ile yapın.',
-    features: ['Yasal geçerlilik (BTK onaylı)', 'Zaman damgası ile kesin kanıt', 'Güvenli iletim ve arşivleme', ' Zamandan ve maliyet tasarrufu', 'Çevre dostu (kağıt tasarrufu)', 'Mahkemelerde geçerli kanıt']
+    features: ['Yasal geçerlilik (BTK onaylı)', 'Zaman damgası ile kesin kanıt', 'Güvenli iletim ve arşivleme', 'Zamandan ve maliyet tasarrufu', 'Çevre dostu (kağıt tasarrufu)', 'Mahkemelerde geçerli kanıt']
   },
   {
     title: 'KEP Assist',
@@ -223,21 +223,22 @@ export default function EBilisim() {
           <p className="text-xl text-green-100 mb-8">
             İşletmeniz için en uygun e-bilişim çözümlerini belirlemek için bizimle iletişime geçin.
           </p>
-          <a href="/" className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors inline-flex items-center gap-2">
+          <a href="/#iletisim" className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors inline-flex items-center gap-2">
             İletişime Geçin <ArrowRight size={20} />
           </a>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - inşa.systems link yapıldı */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center gap-6 mb-4">
             <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
             <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
+            <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
             <a href="/#iletisim" className="hover:text-white transition-colors">İletişim</a>
           </div>
-          <p className="mb-2">inşa.systems | TürkKEP Yetkili Başvuru Merkezi</p>
+          <p className="mb-2"><a href="/" className="hover:text-white transition-colors">inşa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
           <p className="text-sm">© 2025 Tüm Hakları Saklıdır</p>
         </div>
       </footer>

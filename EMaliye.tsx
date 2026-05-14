@@ -15,7 +15,7 @@ function Logo() {
   );
 }
 
-// Navigation Bar
+// Navigation Bar - İletişim linki düzeltildi
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
@@ -27,7 +27,7 @@ function Navbar() {
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors font-medium">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
-          <a href="#iletisim" className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
+          <a href="/#iletisim" className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
         </div>
       </div>
     </nav>
@@ -51,7 +51,7 @@ const services = [
     title: 'e-İrsaliye',
     icon: FileText,
     description: 'Sevkiyat süreçlerinizi dijitalleştirerek lojistik verimliliğinizi artırın. Stok takibini kolaylaştırın, hata riskini minimize edin ve iş süreçlerinizi hızlandırın.',
-    features: ['Zaman tasarrufu', 'Stok yönetimi优化', 'Hata azaltma', 'İzlenebilirlik', 'Lojistik maliyet düşüşü', 'e-Fatura ile entegre']
+    features: ['Zaman tasarrufu', 'Stok yönetimi', 'Hata azaltma', 'İzlenebilirlik', 'Lojistik maliyet düşüşü', 'e-Fatura ile entegre']
   },
   {
     title: 'e-Defter',
@@ -190,7 +190,7 @@ export default function EMaliye() {
               İşletmenizin e-fatura veya diğer e-belge kullanımı zorunlu mu? Size en uygun çözümü belirlemek için
               danışmanlarımızla iletişime geçin.
             </p>
-            <a href="/" className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center gap-2">
+            <a href="/#iletisim" className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center gap-2">
               Ücretsiz Danışmanlık Alın <ArrowRight size={20} />
             </a>
           </div>
@@ -204,21 +204,22 @@ export default function EMaliye() {
           <p className="text-xl text-blue-100 mb-8">
             İşletmeniz için en uygun e-maliye çözümlerini belirlemek için bizimle iletişime geçin.
           </p>
-          <a href="/" className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center gap-2">
+          <a href="/#iletisim" className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center gap-2">
             İletişime Geçin <ArrowRight size={20} />
           </a>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - inşa.systems link yapıldı */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center gap-6 mb-4">
             <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
+            <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
             <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
             <a href="/#iletisim" className="hover:text-white transition-colors">İletişim</a>
           </div>
-          <p className="mb-2">inşa.systems | TürkKEP Yetkili Başvuru Merkezi</p>
+          <p className="mb-2"><a href="/" className="hover:text-white transition-colors">inşa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
           <p className="text-sm">© 2025 Tüm Hakları Saklıdır</p>
         </div>
       </footer>
