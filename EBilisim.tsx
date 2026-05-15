@@ -1,6 +1,7 @@
 import { Shield, CheckCircle, ArrowRight, Clock, Globe, Lock, FileCheck } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
-// Logo Component - Tıklanabilir link
+// Logo Component
 function Logo() {
   return (
     <div className="flex items-center gap-3">
@@ -15,8 +16,14 @@ function Logo() {
   );
 }
 
-// Navigation Bar - İletişim linki düzeltildi
+// Navigation Bar
+// DEĞİŞİKLİK: İletişim butonu window.location.href ile zorla yönlendiriyor
 function Navbar() {
+  const goToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.location.href = '/#iletisim';
+  };
+
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -27,7 +34,13 @@ function Navbar() {
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors font-medium">e-Bilişim</a>
-          <a href="/#iletisim" className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
+          <a
+            href="/#iletisim"
+            onClick={goToContact}
+            className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white transition-colors cursor-pointer"
+          >
+            İletişim
+          </a>
         </div>
       </div>
     </nav>
@@ -85,13 +98,27 @@ const features = [
 ];
 
 export default function EBilisim() {
+  // DEĞİŞİKLİK: Yukarı ok butonu için React state
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowScrollTop(window.scrollY > 500);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // DEĞİŞİKLİK: CTA bölümü iletişim butonu için yönlendirme fonksiyonu
+  const goToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.location.href = '/#iletisim';
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero */}
       <section className="relative bg-gradient-to-r from-green-600 to-emerald-700 text-white py-20 px-4 overflow-hidden">
         <Navbar />
 
-        {/* Background Elements */}
         <div className="absolute top-20 left-10 opacity-20">
           <div className="w-40 h-40 rounded-full bg-green-500 animate-float-slow"></div>
         </div>
@@ -216,32 +243,48 @@ export default function EBilisim() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA - DEĞİŞİKLİK: İletişim butonu window.location ile yönlendiriyor */}
       <section className="py-16 px-4 bg-gradient-to-r from-green-600 to-emerald-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">e-Bilişim Dönüşümüne Başlayın</h2>
           <p className="text-xl text-green-100 mb-8">
             İşletmeniz için en uygun e-bilişim çözümlerini belirlemek için bizimle iletişime geçin.
           </p>
-          <a href="/#iletisim" className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors inline-flex items-center gap-2">
+          <a
+            href="/#iletisim"
+            onClick={goToContact}
+            className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors inline-flex items-center gap-2 cursor-pointer"
+          >
             İletişime Geçin <ArrowRight size={20} />
           </a>
         </div>
       </section>
 
-      {/* Footer - inşa.systems link yapıldı */}
+      {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center gap-6 mb-4">
             <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
             <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
             <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
-            <a href="/#iletisim" className="hover:text-white transition-colors">İletişim</a>
+            <a href="/#iletisim" onClick={goToContact} className="hover:text-white transition-colors cursor-pointer">İletişim</a>
           </div>
           <p className="mb-2"><a href="/" className="hover:text-white transition-colors">inşa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
           <p className="text-sm">© 2025 Tüm Hakları Saklıdır</p>
         </div>
       </footer>
+
+      {/* DEĞİŞİKLİK: Yukarı Ok Butonu - React state ile */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`fixed bottom-6 left-4 md:left-6 z-50 bg-green-600 hover:bg-green-700 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 ${showScrollTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        aria-label="Sayfa başına dön"
+      >
+        <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+      </button>
+
     </div>
   );
 }
