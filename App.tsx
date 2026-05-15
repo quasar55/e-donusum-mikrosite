@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
-import Home from './pages/Home';
-import EMaliye from './pages/EMaliye';
-import EBilisim from './pages/EBilisim';
+import Home from './Home';
+import EMaliye from './EMaliye';
+import EBilisim from './EBilisim';
 
 // Scroll Animation Hook
 function ScrollAnimations() {
