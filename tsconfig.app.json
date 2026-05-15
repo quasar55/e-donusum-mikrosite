@@ -36,7 +36,5 @@
     "noPropertyAccessFromIndexSignature": false,
     "noUncheckedSideEffectImports": false
   },
-  "include": [
-    "src"
-  ]
+"include": ["."]
 }
