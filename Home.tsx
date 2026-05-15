@@ -46,33 +46,24 @@ function AnimatedCounter({ end, suffix = '', duration = 2000 }: { end: number; s
   );
 }
 
-// Animated SVG Document Icon - Responsive boyutlandırma
+// Animated SVG Document Icon
 function AnimatedDocument() {
   return (
     <svg className="w-full h-full max-w-[200px] max-h-[200px] animate-document" viewBox="0 0 200 200" fill="none">
-      {/* Background Circle */}
       <circle cx="100" cy="100" r="90" fill="#EFF6FF" className="animate-pulse-glow" />
-
-      {/* Document */}
       <g className="animate-float">
         <rect x="60" y="40" width="80" height="100" rx="8" fill="white" stroke="#3B82F6" strokeWidth="2" />
         <path d="M110 40V80H140" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M140 40V70L110 70" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-
-        {/* Document Lines */}
         <line x1="75" y1="95" x2="125" y2="95" stroke="#E5E7EB" strokeWidth="3" strokeLinecap="round" />
         <line x1="75" y1="108" x2="115" y2="108" stroke="#E5E7EB" strokeWidth="3" strokeLinecap="round" />
         <line x1="75" y1="121" x2="120" y2="121" stroke="#E5E7EB" strokeWidth="3" strokeLinecap="round" />
       </g>
-
-      {/* Checkmark */}
       <g className="animate-scale-in" style={{ animationDelay: '1s' }}>
         <circle cx="140" cy="50" r="25" fill="#10B981" />
         <path d="M130 50L137 57L152 42" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
               style={{ strokeDasharray: 100, strokeDashoffset: 100, animation: 'checkmark 1s ease-out 1.2s forwards' }} />
       </g>
-
-      {/* Particles - Mobilde gizle */}
       <circle cx="40" cy="60" r="5" fill="#3B82F6" className="animate-float-slow hidden md:block" style={{ animationDelay: '0s' }} />
       <circle cx="160" cy="90" r="4" fill="#10B981" className="animate-float-reverse hidden md:block" style={{ animationDelay: '0.5s' }} />
       <circle cx="50" cy="140" r="6" fill="#F59E0B" className="animate-float-slow hidden md:block" style={{ animationDelay: '1s' }} />
@@ -81,35 +72,26 @@ function AnimatedDocument() {
   );
 }
 
-// Animated KEP Icon - Responsive boyutlandırma
+// Animated KEP Icon
 function AnimatedKEPIcon() {
   return (
     <svg className="w-full h-full max-w-[200px] max-h-[200px]" viewBox="0 0 200 200" fill="none">
-      {/* Background Circle */}
       <circle cx="100" cy="100" r="90" fill="#ECFDF5" />
-
-      {/* Envelope */}
       <g className="animate-float">
         <rect x="40" y="60" width="120" height="80" rx="8" fill="white" stroke="#10B981" strokeWidth="2" />
         <path d="M40 70L100 110L160 70" stroke="#10B981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M40 60L100 100L160 60" stroke="#10B981" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none"
               style={{ strokeDasharray: 300, strokeDashoffset: 0, animation: 'checkmark 2s ease-in-out 0.5s forwards' }} />
       </g>
-
-      {/* Shield */}
       <g className="animate-scale-in" style={{ animationDelay: '1s' }}>
         <path d="M100 30L130 45V75C130 95 115 110 100 120C85 110 70 95 70 75V45L100 30Z" fill="#10B981" />
         <path d="M90 75L97 82L112 67" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
       </g>
-
-      {/* Clock - Mobilde gizle */}
       <g className="animate-float-reverse hidden md:block" style={{ animationDelay: '0.5s' }}>
         <circle cx="155" cy="140" r="20" fill="#F59E0B" />
         <circle cx="155" cy="140" r="16" fill="white" />
         <path d="M155 130V140L162 145" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" />
       </g>
-
-      {/* Floating Elements - Mobilde gizle */}
       <circle cx="30" cy="100" r="4" fill="#10B981" className="animate-float-slow hidden md:block" style={{ animationDelay: '0.2s' }} />
       <circle cx="170" cy="60" r="5" fill="#3B82F6" className="animate-float hidden md:block" style={{ animationDelay: '0.7s' }} />
       <circle cx="45" cy="150" r="4" fill="#F59E0B" className="animate-float-reverse hidden md:block" style={{ animationDelay: '0.4s' }} />
@@ -117,7 +99,7 @@ function AnimatedKEPIcon() {
   );
 }
 
-// Logo Component - Tıklanabilir link
+// Logo Component
 function Logo() {
   return (
     <div className="flex items-center gap-3">
@@ -132,7 +114,7 @@ function Logo() {
   );
 }
 
-// Navigation Bar - İletişim linki düzeltildi
+// Navigation Bar
 function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 py-3 md:py-4 px-4 md:px-6">
@@ -151,69 +133,66 @@ function Navbar() {
   );
 }
 
-// Transformation Flow Animation - Responsive versiyon
+// =============================================
+// DEĞİŞİKLİK 1: TransformationFlow - Mobil portre düzeltmesi
+// Portre mobilde tüm elemanlar görünür, oklar küçük ama mevcut
+// =============================================
 function TransformationFlow() {
   return (
-    <div className="relative w-full max-w-5xl mx-auto py-6 md:py-12 overflow-x-hidden">
-      <div className="flex items-center justify-between gap-2 md:gap-4 px-2">
-        {/* Left: Traditional */}
+    <div className="relative w-full mx-auto py-6 md:py-12 overflow-hidden">
+      <div className="flex items-center justify-between gap-1 md:gap-4 px-2">
+
+        {/* Sol: Geleneksel */}
         <div className="flex-1 text-center min-w-0">
-          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-3 md:p-6 mb-3 md:mb-4 shadow-lg border-2 border-red-200 animate-float-slow">
-            <div className="flex flex-col items-center gap-2 md:gap-3">
-              <div className="w-14 h-16 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-red-300">
-                <FileText className="text-red-500 w-6 h-6 md:w-10 md:h-10" />
+          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-xl md:rounded-2xl p-2 md:p-6 mb-2 md:mb-4 shadow-lg border-2 border-red-200 animate-float-slow">
+            <div className="flex flex-col items-center gap-1 md:gap-3">
+              <div className="w-10 h-12 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-red-300">
+                <FileText className="text-red-500 w-5 h-5 md:w-10 md:h-10" />
               </div>
-              <span className="text-red-700 text-xs md:text-base font-bold">Kağıt Belge</span>
+              <span className="text-red-700 text-[10px] md:text-base font-bold leading-tight">Kağıt Belge</span>
             </div>
           </div>
-          <div className="bg-red-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-md">
+          <div className="bg-red-600 text-white px-1.5 md:px-4 py-1 md:py-2 rounded-full text-[10px] md:text-sm font-semibold shadow-md">
             Geleneksel
           </div>
-          <p className="text-white text-xs mt-2 font-medium hidden sm:block">Yavaş, maliyetli</p>
+          <p className="text-white/80 text-[9px] md:text-xs mt-1 md:mt-2 font-medium">Yavaş, maliyetli</p>
         </div>
 
-        {/* Arrow with Pulse - Mobilde gizle */}
-        <div className="flex-shrink-0 relative hidden md:block">
-          <div className="bg-blue-100 rounded-full p-3 md:p-4 animate-pulse">
-            <ArrowRight className="text-blue-600 w-6 h-6 md:w-10 md:h-10" />
+        {/* Orta: Ok + Dönüşüm İkonu + Ok (mobilde küçük, masaüstünde büyük) */}
+        <div className="flex items-center gap-0.5 md:gap-3 flex-shrink-0">
+          <div className="bg-blue-100 rounded-full p-1 md:p-4 animate-pulse">
+            <ArrowRight className="text-blue-600 w-3 h-3 md:w-10 md:h-10" />
+          </div>
+          <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full w-9 h-9 md:w-24 md:h-24 flex items-center justify-center animate-pulse-glow shadow-xl border-2 md:border-4 border-white">
+            <Zap className="text-white w-4 h-4 md:w-12 md:h-12" />
+          </div>
+          <div className="bg-green-100 rounded-full p-1 md:p-4 animate-pulse">
+            <ArrowRight className="text-green-600 w-3 h-3 md:w-10 md:h-10" />
           </div>
         </div>
 
-        {/* Middle: Transformation */}
-        <div className="flex-shrink-0">
-          <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full w-14 h-14 md:w-24 md:h-24 flex items-center justify-center animate-pulse-glow shadow-xl border-4 border-white">
-            <Zap className="text-white w-7 h-7 md:w-12 md:h-12" />
-          </div>
-        </div>
-
-        {/* Arrow with Pulse - Mobilde gizle */}
-        <div className="flex-shrink-0 relative hidden md:block">
-          <div className="bg-green-100 rounded-full p-3 md:p-4 animate-pulse">
-            <ArrowRight className="text-green-600 w-6 h-6 md:w-10 md:h-10" />
-          </div>
-        </div>
-
-        {/* Right: Digital */}
+        {/* Sağ: Dijital */}
         <div className="flex-1 text-center min-w-0">
-          <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-3 md:p-6 mb-3 md:mb-4 shadow-lg border-2 border-green-300 animate-float">
-            <div className="flex flex-col items-center gap-2 md:gap-3">
-              <div className="w-14 h-16 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-green-500">
-                <Cloud className="text-green-600 w-6 h-6 md:w-10 md:h-10" />
+          <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl md:rounded-2xl p-2 md:p-6 mb-2 md:mb-4 shadow-lg border-2 border-green-300 animate-float">
+            <div className="flex flex-col items-center gap-1 md:gap-3">
+              <div className="w-10 h-12 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-green-500">
+                <Cloud className="text-green-600 w-5 h-5 md:w-10 md:h-10" />
               </div>
-              <span className="text-green-700 text-xs md:text-base font-bold">Dijital</span>
+              <span className="text-green-700 text-[10px] md:text-base font-bold leading-tight">Dijital</span>
             </div>
           </div>
-          <div className="bg-green-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-md">
+          <div className="bg-green-600 text-white px-1.5 md:px-4 py-1 md:py-2 rounded-full text-[10px] md:text-sm font-semibold shadow-md">
             e-Dönüşüm
           </div>
-          <p className="text-green-600 text-xs mt-2 font-medium hidden sm:block">Hızlı, güvenli</p>
+          <p className="text-green-300 text-[9px] md:text-xs mt-1 md:mt-2 font-medium">Hızlı, güvenli</p>
         </div>
+
       </div>
     </div>
   );
 }
 
-// Floating Particles Component - Mobilde azaltıldı
+// Floating Particles Component
 function FloatingParticles() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -301,85 +280,160 @@ const faq = [
   }
 ];
 
-// Partner logos SVG bileşenleri
+// =============================================
+// DEĞİŞİKLİK 2: Partner Logoları - Gerçek görseller
+// Görselleri public/ klasörüne ekleyin:
+//   public/turkkep-logo.png
+//   public/btk-logo.png
+//   public/gib-logo.png
+// =============================================
 function TurkKEPLogo() {
   return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border-2 border-green-200 hover:border-green-400 transition-all hover:shadow-lg">
-      <div className="w-16 h-16 mb-2 flex items-center justify-center">
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <circle cx="50" cy="50" r="45" fill="#10B981" />
-          <text x="50" y="58" textAnchor="middle" fill="white" fontSize="28" fontWeight="bold">KEP</text>
-        </svg>
+    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border-2 border-green-200 hover:border-green-400 transition-all hover:shadow-lg min-w-[150px]">
+      <div className="h-14 w-full flex items-center justify-center mb-2">
+        <img
+          src="/turkkep-logo.png"
+          alt="TürkKEP"
+          className="max-h-full max-w-full object-contain"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'flex';
+          }}
+        />
+        <div className="hidden items-center justify-center">
+          <svg viewBox="0 0 120 40" className="w-28 h-10">
+            <circle cx="20" cy="20" r="18" fill="#10B981" />
+            <text x="20" y="25" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">KEP</text>
+            <text x="65" y="26" textAnchor="middle" fill="#1a1a1a" fontSize="14" fontWeight="bold">TürkKEP</text>
+          </svg>
+        </div>
       </div>
-      <span className="text-lg font-bold text-gray-800">TürkKEP</span>
-      <span className="text-xs text-gray-500">Yetkili Başvuru Merkezi</span>
+      <span className="text-sm font-bold text-gray-800">TürkKEP</span>
+      <span className="text-xs text-gray-500 text-center">Yetkili Başvuru Merkezi</span>
     </div>
   );
 }
 
 function BTKLogo() {
   return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all hover:shadow-lg">
-      <div className="w-16 h-16 mb-2 flex items-center justify-center">
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <rect x="10" y="10" width="80" height="80" rx="10" fill="#2563EB" />
-          <text x="50" y="58" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">BTK</text>
-        </svg>
+    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all hover:shadow-lg min-w-[150px]">
+      <div className="h-14 w-full flex items-center justify-center mb-2">
+        <img
+          src="/btk-logo.png"
+          alt="BTK"
+          className="max-h-full max-w-full object-contain"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'flex';
+          }}
+        />
+        <div className="hidden items-center justify-center">
+          <svg viewBox="0 0 80 40" className="w-20 h-10">
+            <rect x="2" y="2" width="36" height="36" rx="6" fill="#1e3a8a" />
+            <text x="20" y="26" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">BTK</text>
+            <text x="58" y="22" textAnchor="middle" fill="#1e3a8a" fontSize="7" fontWeight="bold">BİLGİ</text>
+            <text x="58" y="30" textAnchor="middle" fill="#1e3a8a" fontSize="7" fontWeight="bold">TEKNOLOJİ</text>
+          </svg>
+        </div>
       </div>
-      <span className="text-lg font-bold text-gray-800">BTK</span>
-      <span className="text-xs text-gray-500">Onaylı Altyapı</span>
+      <span className="text-sm font-bold text-gray-800">BTK</span>
+      <span className="text-xs text-gray-500 text-center">Onaylı Altyapı</span>
     </div>
   );
 }
 
 function GIBLogo() {
   return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg">
-      <div className="w-16 h-16 mb-2 flex items-center justify-center">
-        <svg viewBox="0 0 100 100" className="w-full h-full">
-          <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="#EA580C" />
-          <text x="50" y="58" textAnchor="middle" fill="white" fontSize="18" fontWeight="bold">GİB</text>
-        </svg>
+    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg min-w-[150px]">
+      <div className="h-14 w-full flex items-center justify-center mb-2">
+        <img
+          src="/gib-logo.png"
+          alt="GİB"
+          className="max-h-full max-w-full object-contain"
+          onError={(e) => {
+            e.currentTarget.style.display = 'none';
+            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+            if (fallback) fallback.style.display = 'flex';
+          }}
+        />
+        <div className="hidden items-center justify-center">
+          <svg viewBox="0 0 100 40" className="w-24 h-10">
+            <circle cx="20" cy="20" r="18" fill="#dc2626" />
+            <text x="20" y="26" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">G</text>
+            <text x="62" y="16" textAnchor="middle" fill="#1d4ed8" fontSize="7" fontWeight="bold">GELİR İDARESİ</text>
+            <text x="62" y="26" textAnchor="middle" fill="#1d4ed8" fontSize="7" fontWeight="bold">BAŞKANLIĞI</text>
+          </svg>
+        </div>
       </div>
-      <span className="text-lg font-bold text-gray-800">GİB</span>
-      <span className="text-xs text-gray-500">e-Fatura Uyumlu</span>
+      <span className="text-sm font-bold text-gray-800">GİB</span>
+      <span className="text-xs text-gray-500 text-center">e-Fatura Uyumlu</span>
     </div>
   );
 }
 
 export default function Home() {
-  // Form gönderme fonksiyonu - mailto ile
-  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  // =============================================
+  // DEĞİŞİKLİK 3: Form durumu + Yukarı ok butonu için React state
+  // =============================================
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 500);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // =============================================
+  // DEĞİŞİKLİK 4: Form gönderimi - Web3Forms ile direkt email
+  // web3forms.com'dan ücretsiz key alın ve aşağıya yapıştırın
+  // =============================================
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setFormStatus('sending');
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const name = formData.get('name') as string;
-    const email = formData.get('email') as string;
-    const phone = formData.get('phone') as string;
-    const service = formData.get('service') as string;
-    const message = formData.get('message') as string;
+    const data = {
+      access_key: 'WEB3FORMS_KEY_BURAYA', // ← web3forms.com'dan alın
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      service: formData.get('service'),
+      message: formData.get('message'),
+      subject: `e-Dönüşüm Danışmanlık Talebi - ${formData.get('service') || 'Genel'}`,
+      from_name: 'e-donusum.company İletişim Formu',
+    };
 
-    const subject = encodeURIComponent(`e-Dönüşüm Danışmanlık Talebi - ${service || 'Genel'}`);
-    const body = encodeURIComponent(
-      `Ad Soyad: ${name}\n` +
-      `E-posta: ${email}\n` +
-      `Telefon: ${phone}\n` +
-      `İlgilenilen Hizmet: ${service}\n\n` +
-      `Mesaj:\n${message}`
-    );
-
-    window.location.href = `mailto:eaksu.mcteknoloji@tbm.turkkep.com.tr?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setFormStatus('success');
+        form.reset();
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
   };
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Animated Background */}
+      {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-16 md:py-20 px-4 overflow-hidden">
         <Navbar />
         <FloatingParticles />
 
-        {/* Animated Background Elements - Mobilde gizle */}
         <div className="absolute top-20 left-10 opacity-20 hidden md:block">
           <div className="w-40 h-40 rounded-full bg-blue-500 animate-float-slow"></div>
         </div>
@@ -411,7 +465,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Animated Transformation Flow - Responsive */}
           <div className="mt-10 md:mt-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <TransformationFlow />
           </div>
@@ -444,7 +497,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Animated Stats Section */}
+      {/* Stats Section */}
       <section className="py-10 md:py-12 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50 via-white to-green-50 animate-gradient opacity-50"></div>
         <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -469,11 +522,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works with Icons */}
+      {/* How It Works */}
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">Nasıl Çalışıyoruz?</h2>
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {process.map((item, index) => (
               <div key={index} className="relative bg-white rounded-xl p-4 md:p-6 shadow-md text-center hover-lift animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -493,7 +545,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Preview with Animated Icons */}
+      {/* Services */}
       <section id="hizmetler" className="py-12 md:py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 md:mb-12">
@@ -505,7 +557,6 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            {/* e-Maliye Card with Animated Icon - Responsive */}
             <a href="/e-maliye" className="bg-white rounded-2xl shadow-lg p-4 md:p-8 border-2 border-transparent hover:border-blue-500 transition-all group animate-fade-in-left">
               <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 mx-auto sm:mx-0">
@@ -528,7 +579,6 @@ export default function Home() {
               </div>
             </a>
 
-            {/* e-Bilişim Card with Animated Icon - Responsive */}
             <a href="/e-bilisim" className="bg-white rounded-2xl shadow-lg p-4 md:p-8 border-2 border-transparent hover:border-green-500 transition-all group animate-fade-in-right">
               <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                 <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 mx-auto sm:mx-0">
@@ -554,9 +604,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sistem Entegrasyonu Bölümü - Responsive */}
+      {/* Sistem Entegrasyonu */}
       <section className="py-12 md:py-16 px-4 bg-gradient-to-br from-blue-50 via-white to-green-50 text-gray-800 relative overflow-hidden">
-        {/* Arka plan dekorasyon - Mobilde gizle */}
         <div className="absolute inset-0 opacity-30 hidden md:block">
           <div className="absolute top-10 left-10 w-32 h-32 bg-blue-200 rounded-full"></div>
           <div className="absolute bottom-20 right-20 w-48 h-48 bg-green-200 rounded-full"></div>
@@ -566,7 +615,6 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-            {/* Sol: Sistem Entegrasyonu İçerik */}
             <div className="animate-fade-in-left">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-gray-900">Sistem Entegrasyonu</h2>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
@@ -577,11 +625,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Sağ: Diğer Hizmetlerimiz */}
             <div className="animate-fade-in-right">
               <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-gray-900">Diğer Hizmetlerimiz</h3>
-
-              {/* Bulut İş Yazılımı */}
               <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 mb-4 border-l-4 border-blue-500 hover:shadow-xl transition-all">
                 <div className="flex items-start gap-3 md:gap-4">
                   <div className="bg-blue-100 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -598,7 +643,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Lokasyon Destekli İş Takibi */}
               <div className="bg-white rounded-xl shadow-lg p-4 md:p-6 border-l-4 border-green-500 hover:shadow-xl transition-all">
                 <div className="flex items-start gap-3 md:gap-4">
                   <div className="bg-green-100 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -620,7 +664,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Benefits */}
       <section className="py-12 md:py-16 px-4 bg-blue-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 hidden md:block">
           <div className="absolute top-10 left-20 w-40 h-40 bg-blue-700 rounded-full opacity-30 animate-float-slow"></div>
@@ -668,12 +712,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Partner ve Güven Bölümü - Logo'lar eklendi */}
+      {/* Partner Logoları */}
       <section className="py-12 md:py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">Güven ve Kalite</h2>
 
-          {/* İstatistikler */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             <div className="text-center p-4 md:p-6 bg-blue-50 rounded-xl">
               <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-1 md:mb-2">10+</div>
@@ -693,8 +736,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Partner Logoları - SVG ile eklendi */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+          {/* Partner Logoları */}
+          <div className="flex flex-wrap justify-center items-stretch gap-4 md:gap-6">
             <TurkKEPLogo />
             <BTKLogo />
             <GIBLogo />
@@ -702,11 +745,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ */}
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">Sıkça Sorulan Sorular</h2>
-
           <div className="space-y-4">
             {faq.map((item, index) => (
               <div key={index} className="bg-white rounded-xl p-4 md:p-6 shadow-md hover-lift animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -718,7 +760,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section with Animation */}
+      {/* CTA */}
       <section className="py-12 md:py-16 px-4 bg-gradient-to-r from-green-600 to-blue-600 text-white relative overflow-hidden">
         <div className="absolute inset-0 hidden md:block">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-white opacity-5 rounded-full animate-float-slow"></div>
@@ -735,13 +777,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* İletişim */}
       <section id="iletisim" className="py-12 md:py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">İletişim</h2>
 
           <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-            {/* Hemen Arayalım Butonu */}
             <div className="mb-6 md:mb-8 p-4 md:p-6 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl text-white text-center">
               <h3 className="text-lg md:text-xl font-bold mb-2">Hemen Arayalım</h3>
               <p className="text-white/90 mb-3 md:mb-4 text-sm md:text-base">Uzman danışmanlarımız sorularınızı cevaplamak için hazır</p>
@@ -786,7 +827,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Form - mailto ile gönderim */}
+            {/* =============================================
+                DEĞİŞİKLİK 4: Form - Web3Forms ile direkt email gönderimi
+                ============================================= */}
             <form onSubmit={handleFormSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input type="text" name="name" placeholder="Adınız Soyadınız" required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" />
@@ -804,18 +847,37 @@ export default function Home() {
                 <option value="Diğer">Diğer</option>
               </select>
               <textarea name="message" placeholder="Mesajınız" rows={4} required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none transition-all"></textarea>
-              <button type="submit" className="w-full bg-blue-600 text-white py-3 md:py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all hover:scale-[1.02] hover:shadow-lg">
-                Gönder
+
+              {/* Gönder butonu - duruma göre değişir */}
+              <button
+                type="submit"
+                disabled={formStatus === 'sending'}
+                className="w-full bg-blue-600 text-white py-3 md:py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all hover:scale-[1.02] hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {formStatus === 'sending' ? 'Gönderiliyor...' : 'Gönder'}
               </button>
+
+              {/* Başarı mesajı */}
+              {formStatus === 'success' && (
+                <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg text-sm text-center">
+                  ✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.
+                </div>
+              )}
+
+              {/* Hata mesajı */}
+              {formStatus === 'error' && (
+                <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg text-sm text-center">
+                  ❌ Gönderilemedi. Lütfen tekrar deneyin veya direkt arayın: +90 (533) 264 66 42
+                </div>
+              )}
             </form>
           </div>
         </div>
       </section>
 
-      {/* Footer - inşa.systems link yapıldı */}
+      {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 md:py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          {/* Açıklama */}
           <div className="mb-6 md:mb-8 px-4 py-4 md:py-6 bg-gray-800 rounded-xl max-w-3xl mx-auto">
             <p className="text-gray-300 text-sm leading-relaxed">
               <a href="/" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TürkKEP</a>'in yetkili iş ortağı olarak kurumların dijital dönüşüm süreçlerinde
@@ -823,7 +885,6 @@ export default function Home() {
               e-dönüşüm çözümleri sunar.
             </p>
           </div>
-
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-4 md:mb-6">
             <a href="/" className="hover:text-white transition-colors text-sm md:text-base">Ana Sayfa</a>
             <a href="/e-maliye" className="hover:text-white transition-colors text-sm md:text-base">e-Maliye</a>
@@ -848,11 +909,12 @@ export default function Home() {
         </svg>
       </a>
 
-      {/* Scroll to Top Button - SOL tarafta */}
+      {/* =============================================
+          DEĞİŞİKLİK 5: Yukarı Ok Butonu - React state ile (script kaldırıldı)
+          ============================================= */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-20 md:bottom-6 left-4 md:left-6 z-50 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all opacity-0 pointer-events-none"
-        id="scrollToTopBtn"
+        className={`fixed bottom-20 md:bottom-6 left-4 md:left-6 z-50 bg-blue-600 hover:bg-blue-700 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 ${showScrollTop ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         aria-label="Sayfa başına dön"
       >
         <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -860,21 +922,6 @@ export default function Home() {
         </svg>
       </button>
 
-      {/* Scroll to Top Script */}
-      <script dangerouslySetInnerHTML={{
-        __html: `
-          window.addEventListener('scroll', function() {
-            const btn = document.getElementById('scrollToTopBtn');
-            if (window.scrollY > 500) {
-              btn.classList.remove('opacity-0', 'pointer-events-none');
-              btn.classList.add('opacity-100');
-            } else {
-              btn.classList.add('opacity-0', 'pointer-events-none');
-              btn.classList.remove('opacity-100');
-            }
-          });
-        `
-      }} />
     </div>
   );
 }
