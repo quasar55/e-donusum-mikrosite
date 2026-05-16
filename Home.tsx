@@ -139,59 +139,39 @@ function Navbar() {
 // =============================================
 function TransformationFlow() {
   return (
-    <div className="relative w-full mx-auto py-6 md:py-12 overflow-hidden">
-      <div className="flex items-center justify-between gap-1 md:gap-4 px-2">
-
-        {/* Sol: Geleneksel */}
-        <div className="flex-1 text-center min-w-0">
-          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-xl md:rounded-2xl p-2 md:p-6 mb-2 md:mb-4 shadow-lg border-2 border-red-200 animate-float-slow">
-            <div className="flex flex-col items-center gap-1 md:gap-3">
-              <div className="w-10 h-12 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-red-300">
-                <FileText className="text-red-500 w-5 h-5 md:w-10 md:h-10" />
+    <div className="relative w-full mx-auto py-6 md:py-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 px-4">
+        <div className="text-center">
+          <div className="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl p-4 mb-3 shadow-lg border-2 border-red-200 animate-float-slow">
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-16 h-20 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-red-300">
+                <FileText className="text-red-500 w-8 h-8" />
               </div>
-              <span className="text-red-700 text-[10px] md:text-base font-bold leading-tight">Kağıt Belge</span>
+              <span className="text-red-700 text-sm font-bold">Kağıt Belge</span>
             </div>
           </div>
-          <div className="bg-red-600 text-white px-1.5 md:px-4 py-1 md:py-2 rounded-full text-[10px] md:text-sm font-semibold shadow-md">
-            Geleneksel
-          </div>
-          <p className="text-white/80 text-[9px] md:text-xs mt-1 md:mt-2 font-medium">Yavaş, maliyetli</p>
+          <div className="bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">Geleneksel</div>
+          <p className="text-white/80 text-xs mt-1">Yavaş, maliyetli</p>
         </div>
-
-        {/* Orta: Ok + Dönüşüm İkonu + Ok (mobilde küçük, masaüstünde büyük) */}
-        <div className="flex items-center gap-0.5 md:gap-3 flex-shrink-0">
-          <div className="bg-blue-100 rounded-full p-1 md:p-4 animate-pulse">
-            <ArrowRight className="text-blue-600 w-3 h-3 md:w-10 md:h-10" />
-          </div>
-          <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full w-9 h-9 md:w-24 md:h-24 flex items-center justify-center animate-pulse-glow shadow-xl border-2 md:border-4 border-white">
-            <Zap className="text-white w-4 h-4 md:w-12 md:h-12" />
-          </div>
-          <div className="bg-green-100 rounded-full p-1 md:p-4 animate-pulse">
-            <ArrowRight className="text-green-600 w-3 h-3 md:w-10 md:h-10" />
-          </div>
+        <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-full w-14 h-14 md:w-20 md:h-20 flex items-center justify-center animate-pulse-glow shadow-xl border-4 border-white flex-shrink-0">
+          <Zap className="text-white w-7 h-7 md:w-10 md:h-10" />
         </div>
-
-        {/* Sağ: Dijital */}
-        <div className="flex-1 text-center min-w-0">
-          <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl md:rounded-2xl p-2 md:p-6 mb-2 md:mb-4 shadow-lg border-2 border-green-300 animate-float">
-            <div className="flex flex-col items-center gap-1 md:gap-3">
-              <div className="w-10 h-12 md:w-20 md:h-24 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-green-500">
-                <Cloud className="text-green-600 w-5 h-5 md:w-10 md:h-10" />
+        <div className="text-center">
+          <div className="bg-gradient-to-br from-green-100 to-emerald-100 rounded-2xl p-4 mb-3 shadow-lg border-2 border-green-300 animate-float">
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-16 h-20 bg-white rounded-lg shadow-md flex items-center justify-center border-2 border-green-500">
+                <Cloud className="text-green-600 w-8 h-8" />
               </div>
-              <span className="text-green-700 text-[10px] md:text-base font-bold leading-tight">Dijital</span>
+              <span className="text-green-700 text-sm font-bold">Dijital</span>
             </div>
           </div>
-          <div className="bg-green-600 text-white px-1.5 md:px-4 py-1 md:py-2 rounded-full text-[10px] md:text-sm font-semibold shadow-md">
-            e-Dönüşüm
-          </div>
-          <p className="text-green-300 text-[9px] md:text-xs mt-1 md:mt-2 font-medium">Hızlı, güvenli</p>
+          <div className="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-semibold">e-Dönüşüm</div>
+          <p className="text-green-300 text-xs mt-1">Hızlı, güvenli</p>
         </div>
-
       </div>
     </div>
   );
 }
-
 // Floating Particles Component
 function FloatingParticles() {
   return (
