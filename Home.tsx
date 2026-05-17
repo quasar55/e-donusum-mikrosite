@@ -379,7 +379,7 @@ export default function Home() {
     const formData = new FormData(form);
 
     const data = {
-      access_key: 'WEB3FORMS_KEY_BURAYA', // ← web3forms.com'dan alın
+      access_key: '4a391cb9-7e56-42c8-8859-9720545c3c1e', // ← web3forms.com'dan alın
       name: formData.get('name'),
       email: formData.get('email'),
       phone: formData.get('phone'),
