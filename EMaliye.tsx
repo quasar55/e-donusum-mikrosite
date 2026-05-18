@@ -36,7 +36,7 @@ function Navbar() {
         <a href="/" className="flex items-center gap-3">
           <Logo scrolled={scrolled} />
         </a>
-        <div className="hidden md:flex items-center gap-6 text-white/80 text-sm">
+        <div className="hidden md:flex items-center gap-6 text-gray-700 text-sm">
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors font-medium">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
