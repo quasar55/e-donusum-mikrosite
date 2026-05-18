@@ -280,8 +280,8 @@ export default function EBilisim() {
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-6 right-4 md:right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all animate-bounce text-2xl"
-  aria-label="WhatsApp ile iletişime geç"
->
+  aria-label="WhatsApp ile iletişime geç">
+
   💬
 </a>
       {/* DEĞİŞİKLİK: Yukarı Ok Butonu - React state ile */}
