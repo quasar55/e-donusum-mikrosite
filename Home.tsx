@@ -116,16 +116,22 @@ function Logo() {
 
 // Navigation Bar
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-3 md:py-4 px-4 md:px-6">
+    <nav className={`fixed top-0 left-0 right-0 z-50 py-3 md:py-4 px-4 md:px-6 transition-all duration-500 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
           <Logo />
         </a>
-        <div className="hidden md:flex items-center gap-6 text-white/80 text-sm">
-          <a href="/" className="hover:text-white transition-colors font-medium">Ana Sayfa</a>
-          <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
-          <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
+        <div className="hidden md:flex items-center gap-6 text-sm">
+          <a href="/" className={`transition-colors font-medium ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>Ana Sayfa</a>
+          <a href="/e-maliye" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Maliye</a>
+          <a href="/e-bilisim" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Bilişim</a>
           <a href="/#iletisim" className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
         </div>
       </div>
