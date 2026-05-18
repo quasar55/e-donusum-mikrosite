@@ -275,15 +275,7 @@ export default function EBilisim() {
 
       </footer>
 {/* WhatsApp Floating Button */}
-
-  href="https://wa.me/905332646642?text=Merhaba%2C%20e-Bili%C5%9Fim%20%C3%A7%C3%B6z%C3%BCmleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-6 right-4 md:right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all animate-bounce text-2xl"
-  aria-label="WhatsApp ile iletişime geç">
-
-  💬
-</a>
+      <a href="https://wa.me/905332646642?text=Merhaba" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-4 z-50 bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-2xl text-2xl">💬</a>
       {/* DEĞİŞİKLİK: Yukarı Ok Butonu - React state ile */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
