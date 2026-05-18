@@ -2,15 +2,15 @@ import { FileText, CheckCircle, ArrowRight, Shield, Zap, Clock, DollarSign } fro
 import { useState, useEffect } from 'react';
 
 // Logo Component
-function Logo() {
+function Logo({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <div className="flex items-center gap-3">
       <div className="bg-gradient-to-br from-blue-600 to-blue-800 w-12 h-12 rounded-lg flex items-center justify-center">
         <span className="text-white font-bold text-xl">i</span>
       </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
-        <div className="text-xl font-bold text-white leading-tight">inşa.systems</div>
-        <div className="text-xs text-blue-200">e-Dönüşüm Çözümleri</div>
+        <div className={text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}}>inşa.systems</div>
+        <div className={text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}}>e-Dönüşüm Çözümleri</div>
       </a>
     </div>
   );
@@ -19,6 +19,12 @@ function Logo() {
 // Navigation Bar
 // DEĞİŞİKLİK: İletişim butonu window.location.href ile zorla yönlendiriyor
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   const goToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     window.location.href = '/#iletisim';
@@ -28,7 +34,7 @@ function Navbar() {
     <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
-          <Logo />
+          <Logo scrolled={scrolled} />
         </a>
         <div className="hidden md:flex items-center gap-6 text-white/80 text-sm">
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
