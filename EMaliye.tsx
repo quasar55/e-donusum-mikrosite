@@ -31,7 +31,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6">
+<nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 bg-white shadow-md">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
           <Logo scrolled={scrolled} />
