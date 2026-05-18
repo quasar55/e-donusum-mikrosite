@@ -416,7 +416,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-16 md:py-20 px-4 overflow-hidden min-h-screen">
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white pt-24 md:pt-28 pb-16 md:pb-20 px-4 overflow-hidden min-h-screen">
         <Navbar />
         <FloatingParticles />
 
