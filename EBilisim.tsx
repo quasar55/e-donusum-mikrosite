@@ -9,8 +9,8 @@ function Logo() {
         <span className="text-white font-bold text-xl">i</span>
       </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
-        <div className="text-xl font-bold text-white leading-tight">inşa.systems</div>
-        <div className="text-xs text-green-200">e-Dönüşüm Çözümleri</div>
+        <div className="text-xl font-bold leading-tight text-gray-900">inşa.systems</div>
+        <div className="text-xs text-green-700">e-Dönüşüm Çözümleri</div>
       </a>
     </div>
   );
@@ -25,12 +25,12 @@ function Navbar() {
   };
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6">
+    <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 bg-white shadow-md">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-3">
           <Logo />
         </a>
-        <div className="hidden md:flex items-center gap-6 text-white/80 text-sm">
+        <div className="hidden md:flex items-center gap-6 text-gray-700 text-sm">
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors font-medium">e-Bilişim</a>
