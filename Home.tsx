@@ -278,7 +278,7 @@ function TurkKEPLogo() {
     <div className="flex flex-col items-center p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border-2 border-green-200 hover:border-green-400 transition-all hover:shadow-lg min-w-[150px]">
       <div className="h-14 w-full flex items-center justify-center mb-2">
         <img
-          src="/turkkep-logo.png"
+          src="/TÜRKKEP.webp"
           alt="TürkKEP"
           className="max-h-full max-w-full object-contain"
           onError={(e) => {
@@ -306,7 +306,7 @@ function BTKLogo() {
     <div className="flex flex-col items-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all hover:shadow-lg min-w-[150px]">
       <div className="h-14 w-full flex items-center justify-center mb-2">
         <img
-          src="/btk-logo.png"
+          src="/BTK.webp"
           alt="BTK"
           className="max-h-full max-w-full object-contain"
           onError={(e) => {
@@ -335,7 +335,7 @@ function GIBLogo() {
     <div className="flex flex-col items-center p-4 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg min-w-[150px]">
       <div className="h-14 w-full flex items-center justify-center mb-2">
         <img
-          src="/gib-logo.png"
+          src="/GİB.webp"
           alt="GİB"
           className="max-h-full max-w-full object-contain"
           onError={(e) => {
