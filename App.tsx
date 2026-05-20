@@ -4,6 +4,7 @@ import Home from './Home';
 import EMaliye from './EMaliye';
 import EBilisim from './EBilisim';
 import NotFound from './NotFound';
+import SSS from './SSS';
 
 // Scroll Animation Hook
 function ScrollAnimations() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/e-maliye" element={<EMaliye />} />
         <Route path="/e-bilisim" element={<EBilisim />} />
+        <Route path="/sss" element={<SSS />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
