@@ -40,7 +40,7 @@ export default function SSS() {
             </div>
             <div>
               <div className="text-lg font-bold text-gray-900">inşa.systems</div>
-              <div className="text-xs text-blue-600">e-Dönüşüm Çözümleri</div>
+              <div className="text-xs text-blue-600">e-donusum.company</div>
             </div>
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm text-gray-700">

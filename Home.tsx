@@ -108,7 +108,7 @@ function Logo({ scrolled = false }: { scrolled?: boolean }) {
       </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
         <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>inşa.systems</div>
-        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-Dönüşüm Çözümleri</div>
+        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-donusum.company</div>
       </a>
     </div>
   );
