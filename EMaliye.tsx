@@ -362,7 +362,7 @@ export default function EMaliye() {
             <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
             <a href="/#iletisim" onClick={goToContact} className="hover:text-white transition-colors cursor-pointer">İletişim</a>
           </div>
-          <p className="mb-2"><a href="/" className="hover:text-white transition-colors">inşa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
+          <p className="mb-2"><a href="/" className="hover:text-white transition-colors">e-donusum.company powered by insa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
           <p className="text-sm">© 2025 Tüm Hakları Saklıdır</p>
         </div>
 {/* WhatsApp Floating Button */}
