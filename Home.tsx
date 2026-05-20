@@ -102,110 +102,115 @@ function AnimatedKEPIcon() {
 // Logo Component
 function Logo({ scrolled = false }: { scrolled?: boolean }) {
   return (
-  <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
-  <svg
-    className="w-full h-full"
-    viewBox="0 0 512 512"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <defs>
-      <linearGradient id="logoBg" x1="92" y1="65" x2="420" y2="455" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stopColor="#0d64aa" />
-        <stop offset="0.48" stopColor="#063f86" />
-        <stop offset="1" stopColor="#05265f" />
-      </linearGradient>
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+        <svg
+          className="w-full h-full"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <defs>
+            <linearGradient id="logoBg" x1="92" y1="65" x2="420" y2="455" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="#0d64aa" />
+              <stop offset="0.48" stopColor="#063f86" />
+              <stop offset="1" stopColor="#05265f" />
+            </linearGradient>
 
-      <radialGradient id="logoInnerGlow" cx="50%" cy="42%" r="58%">
-        <stop offset="0" stopColor="#2ba8ee" stopOpacity="0.75" />
-        <stop offset="0.62" stopColor="#1267bf" stopOpacity="0.55" />
-        <stop offset="1" stopColor="#07306f" stopOpacity="0.25" />
-      </radialGradient>
+            <radialGradient id="logoInnerGlow" cx="50%" cy="42%" r="58%">
+              <stop offset="0" stopColor="#2ba8ee" stopOpacity="0.75" />
+              <stop offset="0.62" stopColor="#1267bf" stopOpacity="0.55" />
+              <stop offset="1" stopColor="#07306f" stopOpacity="0.25" />
+            </radialGradient>
 
-      <filter id="logoOrbitGlow" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="5" result="blur" />
-        <feMerge>
-          <feMergeNode />
-          <feMergeNode in="SourceGraphic" />
-        </feMerge>
-      </filter>
+            <filter id="logoOrbitGlow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="5" result="blur" />
+              <feMerge>
+                <feMergeNode />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
 
-      <filter id="logoSignalGlow" x="-80%" y="-80%" width="260%" height="260%">
-        <feGaussianBlur stdDeviation="3.2" result="blur" />
-        <feMerge>
-          <feMergeNode in="blur" />
-          <feMergeNode in="SourceGraphic" />
-        </feMerge>
-      </filter>
-    </defs>
+            <filter id="logoSignalGlow" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="3.2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
 
-    <rect x="42" y="42" width="428" height="428" rx="78" fill="url(#logoBg)" />
-    <circle cx="256" cy="270" r="170" fill="url(#logoInnerGlow)" opacity="0.9" />
+          <rect x="42" y="42" width="428" height="428" rx="78" fill="url(#logoBg)" />
+          <circle cx="256" cy="270" r="170" fill="url(#logoInnerGlow)" opacity="0.9" />
 
-    <path
-      d="M139 288 C84 348 64 416 118 424 C164 431 209 396 229 385"
-      fill="none"
-      stroke="#eaffff"
-      strokeWidth="10"
-      strokeLinecap="round"
-      filter="url(#logoOrbitGlow)"
-    />
+          <path
+            d="M139 288 C84 348 64 416 118 424 C164 431 209 396 229 385"
+            fill="none"
+            stroke="#eaffff"
+            strokeWidth="10"
+            strokeLinecap="round"
+            filter="url(#logoOrbitGlow)"
+          />
 
-    <path
-      d="M294 171 C373 127 438 143 424 213 C418 245 389 278 368 300"
-      fill="none"
-      stroke="#eaffff"
-      strokeWidth="10"
-      strokeLinecap="round"
-      filter="url(#logoOrbitGlow)"
-    />
+          <path
+            d="M294 171 C373 127 438 143 424 213 C418 245 389 278 368 300"
+            fill="none"
+            stroke="#eaffff"
+            strokeWidth="10"
+            strokeLinecap="round"
+            filter="url(#logoOrbitGlow)"
+          />
 
-    <g
-      fill="none"
-      stroke="#7ff4ff"
-      strokeWidth="3.2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      opacity="0.95"
-      filter="url(#logoSignalGlow)"
-    >
-      <path d="M104 397 C133 405 158 403 181 386 L214 373" />
-      <path d="M113 378 C126 346 142 324 160 304" />
-      <path d="M130 396 C123 371 137 340 157 324" />
-      <path d="M143 385 L169 335" />
-      <path d="M152 410 L184 411 L197 402" />
+          <g
+            fill="none"
+            stroke="#7ff4ff"
+            strokeWidth="3.2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            opacity="0.95"
+            filter="url(#logoSignalGlow)"
+          >
+            <path d="M104 397 C133 405 158 403 181 386 L214 373" />
+            <path d="M113 378 C126 346 142 324 160 304" />
+            <path d="M130 396 C123 371 137 340 157 324" />
+            <path d="M143 385 L169 335" />
+            <path d="M152 410 L184 411 L197 402" />
+            <path d="M321 180 C347 166 371 157 396 161" />
+            <path d="M333 195 C359 181 385 173 410 181" />
+            <path d="M356 164 L369 146 L397 150" />
+            <path d="M385 188 C407 202 395 238 372 270" />
+            <path d="M419 193 C415 224 400 254 383 278" />
+          </g>
 
-      <path d="M321 180 C347 166 371 157 396 161" />
-      <path d="M333 195 C359 181 385 173 410 181" />
-      <path d="M356 164 L369 146 L397 150" />
-      <path d="M385 188 C407 202 395 238 372 270" />
-      <path d="M419 193 C415 224 400 254 383 278" />
-    </g>
+          <g fill="#0f5d9e" stroke="#8ff7ff" strokeWidth="3" filter="url(#logoSignalGlow)">
+            <circle cx="105" cy="398" r="4.8" />
+            <circle cx="116" cy="354" r="4.8" />
+            <circle cx="138" cy="319" r="4.8" />
+            <circle cx="156" cy="411" r="4.8" />
+            <circle cx="197" cy="402" r="4.8" />
+            <circle cx="214" cy="373" r="4.8" />
+            <circle cx="328" cy="178" r="4.8" />
+            <circle cx="369" cy="146" r="4.8" />
+            <circle cx="397" cy="150" r="4.8" />
+            <circle cx="410" cy="181" r="4.8" />
+            <circle cx="398" cy="237" r="4.8" />
+            <circle cx="372" cy="270" r="4.8" />
+          </g>
 
-    <g fill="#0f5d9e" stroke="#8ff7ff" strokeWidth="3" filter="url(#logoSignalGlow)">
-      <circle cx="105" cy="398" r="4.8" />
-      <circle cx="116" cy="354" r="4.8" />
-      <circle cx="138" cy="319" r="4.8" />
-      <circle cx="156" cy="411" r="4.8" />
-      <circle cx="197" cy="402" r="4.8" />
-      <circle cx="214" cy="373" r="4.8" />
+          <path
+            d="M260 185 C188 185 144 231 144 300 C144 370 195 416 265 416 C310 416 347 399 375 368 L342 336 C321 357 297 368 266 368 C224 368 197 346 190 311 H392 C396 235 347 185 260 185 Z M260 232 C295 232 320 252 329 282 H192 C202 251 227 232 260 232 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
 
-      <circle cx="328" cy="178" r="4.8" />
-      <circle cx="369" cy="146" r="4.8" />
-      <circle cx="397" cy="150" r="4.8" />
-      <circle cx="410" cy="181" r="4.8" />
-      <circle cx="398" cy="237" r="4.8" />
-      <circle cx="372" cy="270" r="4.8" />
-    </g>
-
-    <path
-      d="M260 185 C188 185 144 231 144 300 C144 370 195 416 265 416 C310 416 347 399 375 368 L342 336 C321 357 297 368 266 368 C224 368 197 346 190 311 H392 C396 235 347 185 260 185 Z M260 232 C295 232 320 252 329 282 H192 C202 251 227 232 260 232 Z"
-      fill="#ffffff"
-    />
-  </svg>
-</div>
       <a href="/" className="hover:opacity-80 transition-opacity">
-        <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>e-dönüşüm.company</div>
-        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-Dönüşüm Hizmetleri</div>
+        <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+          e-dönüşüm.company
+        </div>
+        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>
+          e-Dönüşüm Hizmetleri
+        </div>
       </a>
     </div>
   );
