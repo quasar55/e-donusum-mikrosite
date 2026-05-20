@@ -971,7 +971,7 @@ export default function Home() {
             <p className="text-gray-300 text-sm leading-relaxed">
               <a href="https://insa.systems/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TürkKEP</a>'in yetkili iş ortağı olarak kurumların dijital dönüşüm süreçlerinde
               <span className="text-blue-400 font-medium"> e-Maliye</span> ve <span className="text-green-400 font-medium">e-Bilişim</span> odağında,
-              e-dönüşüm çözümleri sunar.
+              e-dönüşüm çözümlerini, e-donusum.company üzerinden sunar.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6 mb-4 md:mb-6">
