@@ -734,7 +734,8 @@ export default function Home() {
       {/* FAQ */}
       <section className="py-12 md:py-16 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-8 md:mb-12">Sıkça Sorulan Sorular</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 mb-4">Sıkça Sorulan Sorular</h2>
+<p className="text-center text-gray-500 mb-8 md:mb-12">Tüm soruları görmek için <a href="/sss" className="text-blue-600 hover:underline font-medium">SSS sayfasını ziyaret edin →</a></p>
           <div className="space-y-4">
             {faq.map((item, index) => (
               <div key={index} className="bg-white rounded-xl p-4 md:p-6 shadow-md hover-lift animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
