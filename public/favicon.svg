@@ -1,4 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#1d4ed8"/>
-  <text x="16" y="22" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="Arial">i</text>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="92" y1="65" x2="420" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d64aa"/>
+      <stop offset="0.5" stop-color="#063f86"/>
+      <stop offset="1" stop-color="#05265f"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#2ba8ee" stop-opacity="0.75"/>
+      <stop offset="0.62" stop-color="#1267bf" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#07306f" stop-opacity="0.25"/>
+    </radialGradient>
+
+    <filter id="orbitGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="42" y="42" width="428" height="428" rx="86" fill="url(#bg)"/>
+  <circle cx="256" cy="270" r="168" fill="url(#glow)" opacity="0.9"/>
+
+  <path
+    d="M302 174 C370 137 426 151 421 210 C418 245 391 278 368 300"
+    fill="none"
+    stroke="#eaffff"
+    stroke-width="18"
+    stroke-linecap="round"
+    filter="url(#orbitGlow)"
+  />
+
+  <path
+    d="M144 286 C92 345 78 409 126 418 C162 425 200 400 225 385"
+    fill="none"
+    stroke="#eaffff"
+    stroke-width="18"
+    stroke-linecap="round"
+    filter="url(#orbitGlow)"
+  />
+
+  <path
+    d="M260 185 C188 185 144 231 144 300 C144 370 195 416 265 416 C310 416 347 399 375 368 L342 336 C321 357 297 368 266 368 C224 368 197 346 190 311 H392 C396 235 347 185 260 185 Z M260 232 C295 232 320 252 329 282 H192 C202 251 227 232 260 232 Z"
+    fill="#ffffff"
+  />
 </svg>
