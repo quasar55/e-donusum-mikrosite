@@ -39,8 +39,8 @@ export default function SSS() {
               <span className="text-white font-bold text-lg">i</span>
             </div>
             <div>
-              <div className="text-lg font-bold text-gray-900">inşa.systems</div>
-              <div className="text-xs text-blue-600">e-donusum.company</div>
+              <div className="text-lg font-bold text-gray-900">e-dönüşüm.company</div>
+              <div className="text-xs text-blue-600">e-Dönüşüm Hizmetleri</div>
             </div>
           </a>
           <div className="hidden md:flex items-center gap-6 text-sm text-gray-700">

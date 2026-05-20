@@ -9,8 +9,8 @@ function Logo() {
         <span className="text-white font-bold text-xl">i</span>
       </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
-        <div className="text-xl font-bold leading-tight text-gray-900">inşa.systems</div>
-        <div className="text-xs text-green-700">e-donusum.company</div>
+        <div className="text-xl font-bold leading-tight text-gray-900">e-dönüşüm.company</div>
+        <div className="text-xs text-green-700">e-Dönüşüm Hizmetleri</div>
       </a>
     </div>
   );

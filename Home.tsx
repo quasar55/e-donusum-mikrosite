@@ -107,8 +107,8 @@ function Logo({ scrolled = false }: { scrolled?: boolean }) {
         <span className="text-white font-bold text-lg md:text-xl">i</span>
       </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
-        <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>inşa.systems</div>
-        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-donusum.company</div>
+        <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>e-dönüşüm.company</div>
+        <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-Dönüşüm Hizmetleri</div>
       </a>
     </div>
   );
@@ -867,7 +867,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-6 md:mb-8 px-4 py-4 md:py-6 bg-gray-800 rounded-xl max-w-3xl mx-auto">
             <p className="text-gray-300 text-sm leading-relaxed">
-              <a href="/" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TürkKEP</a>'in yetkili iş ortağı olarak kurumların dijital dönüşüm süreçlerinde
+              <a href="https://insa.systems/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TürkKEP</a>'in yetkili iş ortağı olarak kurumların dijital dönüşüm süreçlerinde
               <span className="text-blue-400 font-medium"> e-Maliye</span> ve <span className="text-green-400 font-medium">e-Bilişim</span> odağında,
               e-dönüşüm çözümleri sunar.
             </p>
@@ -878,7 +878,7 @@ export default function Home() {
             <a href="/e-bilisim" className="hover:text-white transition-colors text-sm md:text-base">e-Bilişim</a>
             <a href="/#iletisim" className="hover:text-white transition-colors text-sm md:text-base">İletişim</a>
           </div>
-          <p className="mb-2 text-sm md:text-base"><a href="/" className="hover:text-white transition-colors">inşa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
+          <p className="mb-2 text-sm md:text-base"><a href="/" className="hover:text-white transition-colors">e-dönüşüm.company</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TürkKEP</a> Yetkili Başvuru Merkezi</p>
           <p className="text-sm">© 2025 Tüm Hakları Saklıdır | İstanbul/Türkiye</p>
         </div>
       </footer>
