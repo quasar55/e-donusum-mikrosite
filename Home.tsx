@@ -103,12 +103,29 @@ function AnimatedKEPIcon() {
 function Logo({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <div className="flex items-center gap-3">
-     <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg overflow-hidden flex items-center justify-center">
-  <img 
-    src="/images/logo-ie-style.png" 
-    alt="e-Dönüşüm Logo" 
-    className="w-full h-full object-contain"
-  />
+  <div className="flex items-center gap-2 md:gap-3">
+  {/* Logo - IE Style */}
+  <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+    <img 
+      src="/images/logo-ie-style.png" 
+      alt="e-Dönüşüm Logo" 
+      className="w-full h-full object-contain"
+      onError={(e) => {
+        e.currentTarget.style.display = 'none';
+        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+      }}
+    />
+    {/* Fallback - Eğer resim yüklenemezse */}
+    <div className="hidden absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
+      <span className="text-white font-bold text-lg md:text-xl">e</span>
+    </div>
+  </div>
+  
+  {/* Logo Text */}
+  <div className="hidden sm:block">
+    <div className="text-base md:text-xl font-bold text-white leading-tight">e-Dönüşüm</div>
+    <div className="text-[10px] md:text-xs text-white/70">Dijital Dönüşüm</div>
+  </div>
 </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
         <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>e-dönüşüm.company</div>
