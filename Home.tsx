@@ -103,9 +103,21 @@ function AnimatedKEPIcon() {
 function Logo({ scrolled = false }: { scrolled?: boolean }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="bg-gradient-to-br from-blue-600 to-blue-800 w-10 h-10 md:w-12 md:h-12 rounded-lg flex items-center justify-center">
-        <span className="text-white font-bold text-lg md:text-xl">i</span>
-      </div>
+      <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                <rect width="48" height="48" rx="10" fill="url(#grad)"/>
+                <defs>
+                  <linearGradient id="grad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stopColor="#2563EB"/>
+                    <stop offset="100%" stopColor="#1d4ed8"/>
+                  </linearGradient>
+                </defs>
+                <path d="M14 24 C14 18 18 13 24 13 C30 13 34 18 34 24" stroke="white" strokeWidth="3" strokeLinecap="round" fill="none"/>
+                <path d="M34 24 C34 30 30 35 24 35 C18 35 14 30 14 24" stroke="#60a5fa" strokeWidth="3" strokeLinecap="round" fill="none"/>
+                <path d="M32 20 L34 24 L38 23" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                <path d="M16 28 L14 24 L10 25" stroke="#60a5fa" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+              </svg>
+            </div>
       <a href="/" className="hover:opacity-80 transition-opacity">
         <div className={`text-lg md:text-xl font-bold leading-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>e-dönüşüm.company</div>
         <div className={`text-xs transition-colors ${scrolled ? 'text-blue-600' : 'text-blue-200'}`}>e-Dönüşüm Hizmetleri</div>
