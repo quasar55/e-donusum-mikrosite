@@ -5,7 +5,7 @@ import EMaliye from './EMaliye';
 import EBilisim from './EBilisim';
 import NotFound from './NotFound';
 import SSS from './SSS';
-
+import Hakkimizda from "./HakkimizdaPage";
 // Scroll Animation Hook
 function ScrollAnimations() {
   useEffect(() => {
@@ -38,6 +38,7 @@ function App() {
         <Route path="/e-maliye" element={<EMaliye />} />
         <Route path="/e-bilisim" element={<EBilisim />} />
         <Route path="/sss" element={<SSS />} />
+        <Route path="/hakkimizda" element={<Hakkimizda />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -234,6 +234,7 @@ function Navbar() {
           <a href="/" className={`transition-colors font-medium ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>Ana Sayfa</a>
           <a href="/e-maliye" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Maliye</a>
           <a href="/e-bilisim" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Bilişim</a>
+          <a href="/hakkimizda" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>Hakkımızda</a>
           <a href="/#iletisim" className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg text-white transition-colors">İletişim</a>
         </div>
       </div>
