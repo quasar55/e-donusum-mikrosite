@@ -970,7 +970,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-6 md:mb-8 px-4 py-4 md:py-6 bg-gray-800 rounded-xl max-w-3xl mx-auto">
             <p className="text-gray-300 text-sm leading-relaxed">
-              <a href="https://insa.systems/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TürkKEP</a>'in yetkili başvuru merkezi TÜRKKEP TBM olarak kurumların dijital dönüşüm süreçlerinde
+              <a href="https://insa.systems/" target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:text-white transition-colors">inşa.systems</a>, bir güven kurumu olan <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="text-green-400 font-medium hover:text-white transition-colors">TÜRKKEP</a>'in yetkili başvuru merkezidir. Ve TÜRKKEP TBM olarak kurumların dijital dönüşüm süreçlerinde;
               <span className="text-blue-400 font-medium"> e-Maliye</span> ve <span className="text-green-400 font-medium">e-Bilişim</span> odağında,
               E-Dönüşüm Çözümlerini, e-donusum.company üzerinden sunar.
             </p>
@@ -979,6 +979,7 @@ export default function Home() {
             <a href="/" className="hover:text-white transition-colors text-sm md:text-base">Ana Sayfa</a>
             <a href="/e-maliye" className="hover:text-white transition-colors text-sm md:text-base">e-Maliye</a>
             <a href="/e-bilisim" className="hover:text-white transition-colors text-sm md:text-base">e-Bilişim</a>
+            <a href="/hakkimizda" className="hover:text-white transition-colors text-sm md:text-base">Hakkımızda</a>
             <a href="/#iletisim" className="hover:text-white transition-colors text-sm md:text-base">İletişim</a>
           </div>
           <p className="mb-2 text-sm md:text-base"><a href="/" className="hover:text-white transition-colors">e-donusum.company powered by insa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TÜRKKEP TBM</a> Yetkili Başvuru Merkezi</p>

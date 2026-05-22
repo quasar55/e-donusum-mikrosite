@@ -441,8 +441,8 @@ export default function Hakkimizda() {
             inşa.systems
           </a>
           , bir güven kurumu olan <span className="fc-kep">TÜRKKEP</span>'in
-          yetkili başvuru merkezi TÜRKKEP TBM olarak kurumların dijital dönüşüm
-          süreçlerinde{" "}
+          yetkili başvuru merkezidir. Ve TÜRKKEP TBM olarak kurumların dijital dönüşüm
+          süreçlerinde;{" "}
           <a href="https://www.e-donusum.company/e-maliye" className="fc-maliye">
             e-Maliye
           </a>{" "}
