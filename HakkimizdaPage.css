@@ -32,19 +32,25 @@
     header {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 5%; height: 72px;
+      padding: 0 2%; height: 72px;
       background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
     }
     .logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .logo-icon {
-      width: 50px; height: 50px; border-radius: 13px;
-      background: linear-gradient(145deg, #1a4fa8, #2d6fd4);
-      border: 2px solid rgba(255,255,255,.25);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 26px; font-weight: 900; font-style: italic; color: #fff;
-      box-shadow: 0 4px 16px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.2);
-      transition: transform .25s;
-    }
+.logo-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform .25s;
+}
+
+.logo-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
     .logo-wrap:hover .logo-icon { transform: scale(1.06); }
     .logo-text-wrap { display: flex; flex-direction: column; line-height: 1.2; }
     .logo-text-main { font-size: 17px; font-weight: 800; color: #fff; letter-spacing: -.3px; }

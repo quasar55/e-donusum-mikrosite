@@ -226,11 +226,11 @@ function Navbar() {
   }, []);
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 py-3 md:py-4 px-4 md:px-6 transition-all duration-500 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-      <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <a href="/" className="flex items-center gap-3">
+      <div className="w-full flex items-center justify-between gap-10">
+        <a href="/" className="flex items-center gap-3 shrink-0">
           <Logo scrolled={scrolled} />
         </a>
-        <div className="hidden md:flex items-center gap-6 text-sm">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6 text-sm whitespace-nowrap">
           <a href="/" className={`transition-colors font-medium ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>Ana Sayfa</a>
           <a href="/e-maliye" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Maliye</a>
           <a href="/e-bilisim" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/80 hover:text-white'}`}>e-Bilişim</a>
