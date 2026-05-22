@@ -136,6 +136,7 @@ function Navbar() {
           <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
           <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
           <a href="/e-bilisim" className="hover:text-white transition-colors font-medium">e-Bilişim</a>
+          <a href="/hakkimizda" className="hover:text-white transition-colors">Hakkımızda</a>
           <a
             href="/#iletisim"
             onClick={goToContact}
@@ -369,6 +370,7 @@ export default function EBilisim() {
             <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
             <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
             <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
+            <a href="/hakkimizda" className="hover:text-white transition-colors">Hakkımızda</a>
             <a href="/#iletisim" onClick={goToContact} className="hover:text-white transition-colors cursor-pointer">İletişim</a>
           </div>
           <p className="mb-2"><a href="/" className="hover:text-white transition-colors">e-donusum.company powered by insa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TÜRKKEP TBM</a> Yetkili Başvuru Merkezi</p>

@@ -123,14 +123,15 @@ export default function Hakkimizda() {
           <a href="https://www.e-donusum.company/" className="nav-link">
             Ana Sayfa
           </a>
-          <a href="https://www.e-donusum.company/hakkimizda" className="nav-link">
-            Hakkımızda
-          </a>
+          
           <a href="https://www.e-donusum.company/e-maliye" className="nav-link">
             e-Maliye
           </a>
           <a href="https://www.e-donusum.company/e-bilisim" className="nav-link">
             e-Bilişim
+          </a>
+          <a href="https://www.e-donusum.company/hakkimizda" className="nav-link">
+            Hakkımızda
           </a>
           <a href="#iletisim" className="nav-cta">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -454,9 +455,10 @@ export default function Hakkimizda() {
 
         <nav className="footer-nav">
           <a href="https://www.e-donusum.company/">Ana Sayfa</a>
-          <a href="https://www.e-donusum.company/hakkimizda">Hakkımızda</a>
+          
           <a href="https://www.e-donusum.company/e-maliye">e-Maliye</a>
           <a href="https://www.e-donusum.company/e-bilisim">e-Bilişim</a>
+          <a href="https://www.e-donusum.company/hakkimizda">Hakkımızda</a>
           <a href="#iletisim">İletişim</a>
         </nav>
 
