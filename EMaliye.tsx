@@ -160,8 +160,8 @@ const services = [
   {
     title: 'e-Fatura',
     icon: FileText,
-    description: 'Elektronik fatura ile kağıt tüketimini azaltın, hata oranlarını minimize edin ve fatura süreçlerinizi hızlandırın. GİB onaylı güvenli altyapı ile yasal geçerlilik garantisi.',
-    features: ['Yasal geçerlilik (GİB onaylı)', 'Anlık iletim ve onay', 'Maliyet tasarrufu (kağıt, baskı, posta)', 'Hata oranı minimize', 'Kolay entegrasyon', '7/24 erişim']
+    description: 'Elektronik fatura ile kağıt tüketimini azaltın, hata oranlarını minimize edin ve fatura süreçlerinizi hızlandırın,
+    features: ['Yasal geçerlilik', 'Anlık iletim ve onay', 'Maliyet tasarrufu (kağıt, baskı, posta)', 'Hata oranı minimize', 'Kolay entegrasyon', '7/24 erişim']
   },
   {
     title: 'e-Arşiv Fatura',
@@ -197,7 +197,7 @@ const services = [
     title: 'e-Saklama',
     icon: FileText,
     description: 'Tüm elektronik belgelerinizi yasal süreler boyunca güvenle saklayın. KEP, e-Fatura, e-Defter ve e-Arşiv Fatura verilerinizi tek merkezden yönetin.',
-    features: ['10 yıl yasal saklama', 'Güvenli altyapı', 'Kolay erişim', 'GİB onaylı', 'Alan tasarrufu', 'Veri bütünlüğü']
+    features: ['10 yıl yasal saklama', 'Güvenli altyapı', 'Kolay erişim', 'Alan tasarrufu', 'Veri bütünlüğü']
   },
   {
     title: 'Mali Müşavir Paketi',
@@ -208,7 +208,7 @@ const services = [
 ];
 
 const advantages = [
-  { icon: Shield, title: 'GİB Onaylı', desc: 'Gelir İdaresi Başkanlığı tarafından yetkilendirilmiş özel entegratör' },
+  
   { icon: Clock, title: 'Hızlı İşlem', desc: 'Anlık gönderim ve onay, beklemeye son' },
   { icon: DollarSign, title: 'Maliyet Avantajı', desc: 'Kağıt, baskı ve posta masraflarından tasarruf' },
   { icon: Zap, title: '7/24 Erişim', desc: 'Her zaman, her yerden belgelerinize erişin' },
@@ -253,7 +253,7 @@ export default function EMaliye() {
             Manuel işlemleri ortadan kaldırarak zaman ve maliyet tasarrufu sağlayın.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ GİB Onaylı</span>
+           
             <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ Güvenli Altyapı</span>
             <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ Hızlı Entegrasyon</span>
           </div>
