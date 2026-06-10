@@ -573,6 +573,71 @@ export default function Home() {
     </div>
   </div>
 </section>
+      {/* YENİ: e-Envanter Defteri Modülü Duyuru Banner */}
+<section className="relative bg-gradient-to-br from-emerald-50 via-white to-teal-50 py-14 px-4 overflow-hidden border-b border-emerald-100">
+  <div className="absolute top-0 left-0 w-64 h-64 bg-emerald-200 rounded-full opacity-20 -translate-y-1/2 -translate-x-1/3"></div>
+  <div className="absolute bottom-0 right-0 w-48 h-48 bg-teal-200 rounded-full opacity-20 translate-y-1/3 translate-x-1/4"></div>
+
+  <div className="max-w-6xl mx-auto relative z-10">
+    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      {/* Sol: Metin */}
+      <div>
+        <div className="inline-flex items-center gap-2 bg-emerald-600 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">
+          <Star size={14} className="text-yellow-300" /> Yeni Hizmet — Haziran 2026
+        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+          e-Envanter Defteri Modülü Yayında
+        </h2>
+        <p className="text-gray-600 text-lg mb-4">
+          e-Defter hizmetimizin yeni alt modülü ile envanter defterinizi artık tamamen dijital
+          ortamda, yasal format ve standartlara uygun şekilde oluşturun ve yönetin.
+        </p>
+        <p className="text-gray-600 mb-6">
+          <span className="font-semibold text-emerald-700">e-Defter kullanıyorsanız</span> mevcut
+          süreçlerinizle tam entegre çalışır — kullanımı isteğe bağlıdır, ek bir yasal zorunluluk getirmez.
+        </p>
+        
+          href="/#iletisim"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
+        >
+          Ücretsiz Bilgi Alın <ArrowRight size={20} />
+        </a>
+      </div>
+
+      {/* Sağ: Özellik kartları */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="bg-white rounded-xl p-5 shadow-md border border-emerald-100 hover:shadow-lg transition-shadow">
+          <div className="bg-emerald-100 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+            <FileText className="text-emerald-600" size={20} />
+          </div>
+          <h3 className="font-bold text-gray-900 text-sm mb-1">Dijital Envanter Yönetimi</h3>
+          <p className="text-gray-600 text-xs">Açılış ve kapanış onayları dâhil tüm envanter defteri süreçleri elektronik ortamda</p>
+        </div>
+        <div className="bg-white rounded-xl p-5 shadow-md border border-emerald-100 hover:shadow-lg transition-shadow">
+          <div className="bg-emerald-100 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+            <Upload className="text-emerald-600" size={20} />
+          </div>
+          <h3 className="font-bold text-gray-900 text-sm mb-1">Esnek Veri Yükleme</h3>
+          <p className="text-gray-600 text-xs">XML, XBRL, Excel veya CSV — size uygun formatla kolayca yükleyin</p>
+        </div>
+        <div className="bg-white rounded-xl p-5 shadow-md border border-emerald-100 hover:shadow-lg transition-shadow">
+          <div className="bg-emerald-100 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+            <CheckCircle className="text-emerald-600" size={20} />
+          </div>
+          <h3 className="font-bold text-gray-900 text-sm mb-1">Otomatik Kontrol</h3>
+          <p className="text-gray-600 text-xs">Yüklenen veriler sistem tarafından otomatik doğrulanır, hatalar anında raporlanır</p>
+        </div>
+        <div className="bg-white rounded-xl p-5 shadow-md border border-emerald-100 hover:shadow-lg transition-shadow">
+          <div className="bg-emerald-100 w-10 h-10 rounded-lg flex items-center justify-center mb-3">
+            <Zap className="text-emerald-600" size={20} />
+          </div>
+          <h3 className="font-bold text-gray-900 text-sm mb-1">e-Defter ile Tam Entegre</h3>
+          <p className="text-gray-600 text-xs">Mevcut e-Defter süreçlerinizden bağımsız yürür, operasyonel kolaylık sağlar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* Trust Badges */}
       <section className="py-6 md:py-8 bg-blue-50 border-b border-blue-100">
         <div className="max-w-6xl mx-auto px-4">
