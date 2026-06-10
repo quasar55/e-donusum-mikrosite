@@ -313,7 +313,7 @@ const benefits = [
   {
     icon: Shield,
     title: 'Güvenilir Altyapı',
-    description: 'BTK ve GİB yetkili TürkKEP altyapısıyla yasal geçerliliği garantili çözümler sunuyoruz.'
+    description: 'TÜRKKEP altyapısıyla yasal geçerliliği garantili çözümler sunuyoruz.'
   },
   {
     icon: Users,
@@ -373,8 +373,6 @@ const faq = [
 // DEĞİŞİKLİK 2: Partner Logoları - Gerçek görseller
 // Görselleri public/ klasörüne ekleyin:
 //   public/turkkep-logo.png
-//   public/btk-logo.png
-//   public/gib-logo.png
 // =============================================
 function TurkKEPLogo() {
   return (
@@ -400,64 +398,6 @@ function TurkKEPLogo() {
       </div>
       <span className="text-sm font-bold text-gray-800">TürkKEP</span>
       <span className="text-xs text-gray-500 text-center">Yetkili Başvuru Merkezi</span>
-    </div>
-  );
-}
-
-function BTKLogo() {
-  return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all hover:shadow-lg min-w-[150px]">
-      <div className="h-14 w-full flex items-center justify-center mb-2">
-        <img
-          src="/btk.webp"
-          alt="BTK"
-          className="max-h-full max-w-full object-contain"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none';
-            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-            if (fallback) fallback.style.display = 'flex';
-          }}
-        />
-        <div className="hidden items-center justify-center">
-          <svg viewBox="0 0 80 40" className="w-20 h-10">
-            <rect x="2" y="2" width="36" height="36" rx="6" fill="#1e3a8a" />
-            <text x="20" y="26" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">BTK</text>
-            <text x="58" y="22" textAnchor="middle" fill="#1e3a8a" fontSize="7" fontWeight="bold">BİLGİ</text>
-            <text x="58" y="30" textAnchor="middle" fill="#1e3a8a" fontSize="7" fontWeight="bold">TEKNOLOJİ</text>
-          </svg>
-        </div>
-      </div>
-      <span className="text-sm font-bold text-gray-800">BTK</span>
-      <span className="text-xs text-gray-500 text-center">Onaylı Altyapı</span>
-    </div>
-  );
-}
-
-function GIBLogo() {
-  return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border-2 border-orange-200 hover:border-orange-400 transition-all hover:shadow-lg min-w-[150px]">
-      <div className="h-14 w-full flex items-center justify-center mb-2">
-        <img
-          src="/gib.webp"
-          alt="GİB"
-          className="max-h-full max-w-full object-contain"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none';
-            const fallback = e.currentTarget.nextElementSibling as HTMLElement;
-            if (fallback) fallback.style.display = 'flex';
-          }}
-        />
-        <div className="hidden items-center justify-center">
-          <svg viewBox="0 0 100 40" className="w-24 h-10">
-            <circle cx="20" cy="20" r="18" fill="#dc2626" />
-            <text x="20" y="26" textAnchor="middle" fill="white" fontSize="16" fontWeight="bold">G</text>
-            <text x="62" y="16" textAnchor="middle" fill="#1d4ed8" fontSize="7" fontWeight="bold">GELİR İDARESİ</text>
-            <text x="62" y="26" textAnchor="middle" fill="#1d4ed8" fontSize="7" fontWeight="bold">BAŞKANLIĞI</text>
-          </svg>
-        </div>
-      </div>
-      <span className="text-sm font-bold text-gray-800">GİB</span>
-      <span className="text-xs text-gray-500 text-center">e-Fatura Uyumlu</span>
     </div>
   );
 }
@@ -568,13 +508,13 @@ export default function Home() {
               <div className="bg-blue-100 p-2 rounded-lg">
                 <Shield className="text-blue-600" size={20} />
               </div>
-              <span className="text-xs md:text-sm font-medium text-gray-700">BTK Yetkili KEP Sağlayıcı</span>
+          
             </div>
             <div className="flex items-center gap-2 animate-fade-in-left" style={{ animationDelay: '0.1s' }}>
               <div className="bg-blue-100 p-2 rounded-lg">
                 <CheckCircle className="text-blue-600" size={20} />
               </div>
-              <span className="text-xs md:text-sm font-medium text-gray-700">GİB Onaylı Özel Entegratör</span>
+             
             </div>
             <div className="flex items-center gap-2 animate-fade-in-right" style={{ animationDelay: '0.2s' }}>
               <div className="bg-blue-100 p-2 rounded-lg">
@@ -828,8 +768,6 @@ export default function Home() {
           {/* Partner Logoları */}
           <div className="flex flex-wrap justify-center items-stretch gap-4 md:gap-6">
             <TurkKEPLogo />
-            <BTKLogo />
-            <GIBLogo />
           </div>
         </div>
       </section>
