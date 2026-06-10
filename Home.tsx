@@ -353,7 +353,7 @@ const process = [
 const faq = [
   {
     question: 'e-Fatura kullanmak için özel bir yazılım gerekli mi?',
-    answer: 'TürkKEP\'in sunduğu portal veya mevcut muhasebe yazılımınızla entegrasyon seçenekleri mevcuttur. Danışmanlarımız size en uygun çözümü belirleyecektir.'
+    answer: 'TÜRKKEP\'in sunduğu portal veya mevcut muhasebe yazılımınızla entegrasyon seçenekleri mevcuttur. Danışmanlarımız size en uygun çözümü belirleyecektir.'
   },
   {
     question: 'KEP hesabı açmak ne kadar sürer?',
@@ -380,7 +380,7 @@ function TurkKEPLogo() {
       <div className="h-14 w-full flex items-center justify-center mb-2">
         <img
           src="/turkkep.webp"
-          alt="TürkKEP"
+          alt="TÜRKKEP"
           className="max-h-full max-w-full object-contain"
           onError={(e) => {
             e.currentTarget.style.display = 'none';
@@ -392,11 +392,11 @@ function TurkKEPLogo() {
           <svg viewBox="0 0 120 40" className="w-28 h-10">
             <circle cx="20" cy="20" r="18" fill="#10B981" />
             <text x="20" y="25" textAnchor="middle" fill="white" fontSize="11" fontWeight="bold">KEP</text>
-            <text x="65" y="26" textAnchor="middle" fill="#1a1a1a" fontSize="14" fontWeight="bold">TürkKEP</text>
+            <text x="65" y="26" textAnchor="middle" fill="#1a1a1a" fontSize="14" fontWeight="bold">TÜRKKEP</text>
           </svg>
         </div>
       </div>
-      <span className="text-sm font-bold text-gray-800">TürkKEP</span>
+      <span className="text-sm font-bold text-gray-800">TÜRKKEP</span>
       <span className="text-xs text-gray-500 text-center">Yetkili Başvuru Merkezi</span>
     </div>
   );
@@ -473,7 +473,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center relative z-10 pt-16">
           <div className="inline-flex items-center gap-2 bg-blue-800 px-4 py-2 rounded-full mb-6 animate-fade-in-up">
             <Star className="text-yellow-400" size={16} />
-            <span className="text-sm">TürkKEP Yetkili Başvuru Merkezi</span>
+            <span className="text-sm">TÜRKKEP Yetkili Başvuru Merkezi</span>
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
@@ -718,7 +718,7 @@ export default function Home() {
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Hizmetlerimiz</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
-              Türkiye'nin güvenilir e-dönüşüm markası TürkKEP'in yetkili başvuru merkezi olarak,
+              Türkiye'nin güvenilir e-dönüşüm markası TÜRKKEP'in yetkili başvuru merkezi olarak,
               tüm e-dönüşüm ihtiyaçlarınız için tek adresteyiz.
             </p>
           </div>
