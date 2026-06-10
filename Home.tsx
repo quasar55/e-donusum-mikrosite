@@ -563,7 +563,7 @@ export default function Home() {
     </div>
 
     <div className="text-center">
-      
+      <a
         href="/#iletisim"
         className="bg-cyan-400 hover:bg-cyan-300 text-blue-950 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center gap-2"
       >
