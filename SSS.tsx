@@ -27,7 +27,7 @@ export default function SSS() {
   const [acik, setAcik] = useState<number | null>(null);
 
   useEffect(() => {
-    document.title = 'Sıkça Sorulan Sorular | inşa.systems';
+    document.title = 'Sıkça Sorulan Sorular | e-dönüşüm.company';
   }, []);
 
   return (
