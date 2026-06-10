@@ -596,7 +596,7 @@ export default function Home() {
           <span className="font-semibold text-emerald-700">e-Defter kullanıyorsanız</span> mevcut
           süreçlerinizle tam entegre çalışır — kullanımı isteğe bağlıdır, ek bir yasal zorunluluk getirmez.
         </p>
-        
+        <a
           href="/#iletisim"
           className="bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
         >
@@ -1009,6 +1009,7 @@ export default function Home() {
                 <option value="e-Arşiv Fatura">e-Arşiv Fatura</option>
                 <option value="e-İrsaliye">e-İrsaliye</option>
                 <option value="e-Defter">e-Defter</option>
+                <option value="e-Envanter Defteri">e-Envanter Defteri</option>
                 <option value="e-İmza">e-İmza</option>
                 <option value="Diğer">Diğer</option>
               </select>
