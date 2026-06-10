@@ -554,7 +554,7 @@ export default function Home() {
           doğrulanır, içerik değiştirilemez, her adım kayıt altındadır.
         </p>
         <ul className="space-y-2.5 text-sm">
-          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>İadeli taahhütlü 2 gün — KEP ile dakikalar içinde</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>KEP ile saniyeler içinde gönderim</span></li>
           <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>İletiler 20 yıl güvenle saklanır</span></li>
           <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Posta, baskı ve noter masraflarından tasarruf</span></li>
           <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Çevre dostu, tamamen dijital süreç</span></li>
