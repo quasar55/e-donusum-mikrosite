@@ -1,4 +1,4 @@
-import { FileText, Shield, Clock, Users, CheckCircle, ArrowRight, Star, Zap, Globe, Heart, Mail, Upload, Download, Cloud } from 'lucide-react';
+import { FileText, Shield, ShieldCheck, Clock, Users, CheckCircle, ArrowRight, Star, Zap, Globe, Heart, Mail, Upload, Download, Cloud } from 'lucide-react';
 import { useEffect, useState, useRef } from 'react';
 
 // Animated Counter Component
@@ -499,7 +499,80 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* KEP & KEP İK Öne Çıkan Banner */}
+<section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 text-white py-16 px-4 overflow-hidden">
+  {/* Dekoratif arka plan */}
+  <div className="absolute top-0 right-0 w-72 h-72 bg-blue-500 rounded-full opacity-10 -translate-y-1/3 translate-x-1/3"></div>
+  <div className="absolute bottom-0 left-0 w-56 h-56 bg-cyan-400 rounded-full opacity-10 translate-y-1/3 -translate-x-1/3"></div>
 
+  <div className="max-w-6xl mx-auto relative z-10">
+    <div className="text-center mb-10">
+      <span className="inline-block bg-cyan-400/20 text-cyan-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
+        TÜRKKEP Yetkili Başvuru Merkezi
+      </span>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+        Bordrolarınızı Hâlâ Kâğıtla mı Dağıtıyorsunuz?
+      </h2>
+      <p className="text-blue-100 text-lg max-w-3xl mx-auto">
+        Kaybolan, yanlış ellere geçen kâğıt bordrolar işvereni iş davalarına karşı savunmasız bırakır.
+        <span className="font-semibold text-white"> KEP İK®</span> ile bordrolarınızı yasal geçerli,
+        hukuki delil niteliğinde ve sadece ilgili çalışana ulaşacak şekilde gönderin.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-6 mb-10">
+      {/* KEP İK Kartı */}
+      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-colors">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-cyan-400/20 w-12 h-12 rounded-xl flex items-center justify-center">
+            <ShieldCheck className="text-cyan-300" size={26} />
+          </div>
+          <h3 className="text-xl font-bold">KEP İK® — Güvenli Bordro Gönderimi</h3>
+        </div>
+        <p className="text-blue-100 text-sm mb-5">
+          Türkiye'de bir ilk olan KEP İK® ile bordro dâhil tüm İK evraklarını elektronik ortamda,
+          yasal geçerli şekilde iletin. Bordro imzalatma ve kâğıt arşivleme derdine son.
+        </p>
+        <ul className="space-y-2.5 text-sm">
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Hukuki delil niteliği — şirketi ve çalışanı korur</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Tek tek veya toplu bordro gönderimi</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Kargo, kurye ve arşiv maliyetleri sıfırlanır</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>İK süreçlerinde etkin zaman yönetimi</span></li>
+        </ul>
+      </div>
+
+      {/* KEP Kartı */}
+      <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/15 hover:bg-white/15 transition-colors">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="bg-cyan-400/20 w-12 h-12 rounded-xl flex items-center justify-center">
+            <Mail className="text-cyan-300" size={26} />
+          </div>
+          <h3 className="text-xl font-bold">KEP — Kayıtlı Elektronik Posta</h3>
+        </div>
+        <p className="text-blue-100 text-sm mb-5">
+          Ticari ve hukuki tüm yazışmalarınızı kesin delil niteliğinde gönderin. Alıcı kimliği
+          doğrulanır, içerik değiştirilemez, her adım kayıt altındadır.
+        </p>
+        <ul className="space-y-2.5 text-sm">
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>İadeli taahhütlü 2 gün — KEP ile dakikalar içinde</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>İletiler 20 yıl güvenle saklanır</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Posta, baskı ve noter masraflarından tasarruf</span></li>
+          <li className="flex items-start gap-2"><CheckCircle size={15} className="text-cyan-300 mt-0.5 flex-shrink-0" /><span>Çevre dostu, tamamen dijital süreç</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="text-center">
+      
+        href="/#iletisim"
+        className="bg-cyan-400 hover:bg-cyan-300 text-blue-950 px-8 py-4 rounded-lg font-bold text-lg transition-colors inline-flex items-center gap-2"
+      >
+        Hemen KEP Sahibi Olun <ArrowRight size={20} />
+      </a>
+      <p className="text-blue-200 text-sm mt-3">Ücretsiz danışmanlık için bizimle iletişime geçin</p>
+    </div>
+  </div>
+</section>
       {/* Trust Badges */}
       <section className="py-6 md:py-8 bg-blue-50 border-b border-blue-100">
         <div className="max-w-6xl mx-auto px-4">
