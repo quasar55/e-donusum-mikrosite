@@ -9,7 +9,7 @@ const sorular = [
   { s: 'e-İrsaliye kullanmak zorunda mıyım?', c: 'Depo işleten ve belirli ciro eşiğini aşan işletmeler için zorunludur. GİB düzenlemelerine göre kapsam genişlemektedir.' },
   { s: 'Mevcut muhasebe programımla entegrasyon mümkün mü?', c: 'Logo, Mikro, Netsis, SAP gibi yaygın muhasebe yazılımlarıyla entegrasyon sağlayabiliyoruz. Detaylar için bize ulaşın.' },
   { s: 'KEP adresi neden önemlidir?', c: 'KEP (Kayıtlı Elektronik Posta), yasal geçerliliği olan elektronik tebligat altyapısıdır. Resmi yazışmalar, sözleşmeler ve tebligatlar için kullanılır.' },
-  { s: 'e-Dönüşüm sürecinde veri güvenliği nasıl sağlanır?', c: 'BTK onaylı altyapımız ve TürkKEP ortaklığımız sayesinde tüm verileriniz şifreli ortamda saklanır. ISO 27001 standartlarına uygun güvenlik protokolleri uygulanır.' },
+  { s: 'e-Dönüşüm sürecinde veri güvenliği nasıl sağlanır?', c: 'TürkKEP ortaklığımız sayesinde tüm verileriniz şifreli ortamda saklanır. ISO 27001 standartlarına uygun güvenlik protokolleri uygulanır.' },
   { s: 'Kurulum ne kadar sürer?', c: 'Standart kurulumlar genellikle 1-5 iş günü içinde tamamlanır. Büyük ölçekli entegrasyonlar için süre ihtiyaca göre planlanır.' },
   { s: 'e-Müstahsil makbuzu nedir?', c: 'Çiftçilerden ürün satın alan işletmelerin düzenlemesi gereken elektronik belgedir. Tarım sektöründe faaliyet gösterenler için zorunlu hale gelmektedir.' },
   { s: 'Eğitim desteği veriyor musunuz?', c: 'Evet, kurulum sonrasında ekibinize sistem kullanımı konusunda kapsamlı eğitim veriyoruz. Online ve yüz yüze eğitim seçeneklerimiz mevcuttur.' },
