@@ -160,7 +160,7 @@ const services = [
   {
     title: 'e-Fatura',
     icon: FileText,
-    description: 'Elektronik fatura ile kağıt tüketimini azaltın, hata oranlarını minimize edin ve fatura süreçlerinizi hızlandırın,
+    description: 'Elektronik fatura ile kağıt tüketimini azaltın, hata oranlarını minimize edin ve fatura süreçlerinizi hızlandırın',
     features: ['Yasal geçerlilik', 'Anlık iletim ve onay', 'Maliyet tasarrufu (kağıt, baskı, posta)', 'Hata oranı minimize', 'Kolay entegrasyon', '7/24 erişim']
   },
   {
