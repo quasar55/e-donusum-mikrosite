@@ -154,7 +154,7 @@ const services = [
   {
     title: 'KEP (Kayıtlı Elektronik Posta)',
     description: 'Yasal, hızlı, güvenli ve tasarruflu bir iletişim sistemi. Her türlü bildirim, başvuru, dilekçe, sözleşme, fatura ve ihtar gibi resmi belge paylaşımınızı KEP ile yapın.',
-    features: ['Yasal geçerlilik (BTK onaylı)', 'Zaman damgası ile kesin kanıt', 'Güvenli iletim ve arşivleme', 'Zamandan ve maliyet tasarrufu', 'Çevre dostu (kağıt tasarrufu)', 'Mahkemelerde geçerli kanıt']
+    features: ['Yasal geçerlilik', 'Zaman damgası ile kesin kanıt', 'Güvenli iletim ve arşivleme', 'Zamandan ve maliyet tasarrufu', 'Çevre dostu (kağıt tasarrufu)', 'Mahkemelerde geçerli kanıt']
   },
   {
     title: 'KEP Assist',
@@ -194,7 +194,7 @@ const services = [
 ];
 
 const features = [
-  { icon: Shield, title: 'BTK Yetkili', desc: 'Bilgi Teknolojileri ve İletişim Kurumu onaylı' },
+  
   { icon: Lock, title: 'Güvenli Altyapı', desc: '256-bit şifreleme ile maksimum güvenlik' },
   { icon: Clock, title: '7/24 Destek', desc: 'Her zaman ulaşabileceğiniz teknik destek' },
   { icon: Globe, title: '81 İl Kapsamı', desc: 'Türkiye\'nin her yerinden erişim' },
@@ -239,7 +239,7 @@ export default function EBilisim() {
             KEP ve e-İmza ile iş süreçlerinizi hızlandırın.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ BTK Yetkili KEP Sağlayıcı</span>
+           
             <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ Yasal Geçerlilik</span>
             <span className="bg-white/20 px-4 py-2 rounded-full text-sm">✓ Hızlı Entegrasyon</span>
           </div>
@@ -279,7 +279,7 @@ export default function EBilisim() {
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <CheckCircle className="text-green-500" size={20} />
-                    <span className="text-gray-700">BTK tarafından yetkilendirilmiş güvenli altyapı</span>
+                    
                   </li>
                   <li className="flex items-center gap-3">
                     <CheckCircle className="text-green-500" size={20} />
@@ -319,7 +319,7 @@ export default function EBilisim() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">e-Bilişim Hizmetleri</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               KEP, e-İmza ve diğer e-bilişim çözümleriyle işletmenizin dijital dönüşümünü tamamlayın.
-              Tüm hizmetler BTK ve GİB onaylı güvenli altyapılarla sunulmaktadır.
+              
             </p>
           </div>
 
