@@ -453,13 +453,19 @@ export default function Hakkimizda() {
           odağında, E-Dönüşüm Çözümlerini, e-donusum.company üzerinden sunar.
         </div>
 
-        <nav className="footer-nav">
+      <nav className="footer-nav">
           <a href="https://www.e-donusum.company/">Ana Sayfa</a>
-          
           <a href="https://www.e-donusum.company/e-maliye">e-Maliye</a>
           <a href="https://www.e-donusum.company/e-bilisim">e-Bilişim</a>
           <a href="https://www.e-donusum.company/hakkimizda">Hakkımızda</a>
           <a href="#iletisim">İletişim</a>
+        </nav>
+
+        <nav className="footer-nav" style={{ marginTop: "0.5rem", fontSize: "0.85em", opacity: 0.85 }}>
+          <a href="/kvkk">KVKK Aydınlatma Metni</a>
+          <a href="/gizlilik">Gizlilik Politikası</a>
+          <a href="/cerez-politikasi">Çerez Politikası</a>
+          <a href="/kullanim-kosullari">Kullanım Koşulları</a>
         </nav>
 
         <p className="footer-powered">
