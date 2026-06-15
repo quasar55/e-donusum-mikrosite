@@ -1019,7 +1019,18 @@ export default function Home() {
                 <option value="Diğer">Diğer</option>
               </select>
               <textarea name="message" placeholder="Mesajınız" rows={4} required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none transition-all"></textarea>
+<textarea name="message" placeholder="Mesajınız" rows={4} required className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none transition-all"></textarea>
 
+              {/* KVKK açık rıza onayı */}
+              <label className="flex items-start gap-3 text-sm text-gray-600 cursor-pointer">
+                <input type="checkbox" name="consent" required className="mt-1 w-4 h-4 flex-shrink-0 accent-blue-600" />
+                <span>
+                  <a href="/kvkk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">KVKK Aydınlatma Metni</a>'ni
+                  okudum; kişisel verilerimin, iletişim talebimin yanıtlanması amacıyla işlenmesini kabul ediyorum.
+                </span>
+              </label>
+
+              {/* Gönder butonu - duruma göre değişir */}
               {/* Gönder butonu - duruma göre değişir */}
               <button
                 type="submit"
