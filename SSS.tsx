@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Footer from './Footer';
 
 const sorular = [
   { s: 'e-Fatura kullanmak için özel bir yazılım gerekli mi?', c: 'TürkKEP\'in sunduğu portal veya mevcut muhasebe yazılımınızla entegrasyon seçenekleri mevcuttur. Danışmanlarımız size en uygun çözümü belirleyecektir.' },
@@ -179,11 +180,13 @@ export default function SSS() {
         <div className="mt-12 text-center bg-blue-50 rounded-2xl p-8">
           <h2 className="text-xl font-bold text-gray-900 mb-2">Sorunuzu bulamadınız mı?</h2>
           <p className="text-gray-500 mb-4">Uzman ekibimiz size yardımcı olmaya hazır.</p>
-          <a href="/#iletisim" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors inline-block">
+        <a href="/#iletisim" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors inline-block">
             Bize Ulaşın
           </a>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
