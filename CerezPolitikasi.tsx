@@ -35,7 +35,7 @@ export default function CerezPolitikasi() {
       <p className="text-gray-700 leading-relaxed mb-4">
         Tarayıcınızın ayarlarından çerezleri kabul etme, reddetme veya silme tercihlerinizi her zaman
         değiştirebilirsiniz. Zorunlu çerezlerin devre dışı bırakılması durumunda sitenin bazı bölümleri düzgün
-        çalışmayabilir. Çoğu tarayıcıda çerez yönetimi "Ayarlar > Gizlilik" bölümünden yapılabilir.
+        çalışmayabilir. Çoğu tarayıcıda çerez yönetimi "Ayarlar › Gizlilik" bölümünden yapılabilir.
       </p>
 
       <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">5. Değişiklikler</h2>
