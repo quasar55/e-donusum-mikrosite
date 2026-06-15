@@ -6,6 +6,11 @@ import EBilisim from './EBilisim';
 import NotFound from './NotFound';
 import SSS from './SSS';
 import Hakkimizda from "./HakkimizdaPage";
+import KVKK from './KVKK';
+import Gizlilik from './Gizlilik';
+import CerezPolitikasi from './CerezPolitikasi';
+import KullanimKosullari from './KullanimKosullari';
+
 // Scroll Animation Hook
 function ScrollAnimations() {
   useEffect(() => {
@@ -19,13 +24,10 @@ function ScrollAnimations() {
       },
       { threshold: 0.1 }
     );
-
     const elements = document.querySelectorAll('.scroll-animate');
     elements.forEach((el) => observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
-
   return null;
 }
 
@@ -39,6 +41,10 @@ function App() {
         <Route path="/e-bilisim" element={<EBilisim />} />
         <Route path="/sss" element={<SSS />} />
         <Route path="/hakkimizda" element={<Hakkimizda />} />
+        <Route path="/kvkk" element={<KVKK />} />
+        <Route path="/gizlilik" element={<Gizlilik />} />
+        <Route path="/cerez-politikasi" element={<CerezPolitikasi />} />
+        <Route path="/kullanim-kosullari" element={<KullanimKosullari />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
