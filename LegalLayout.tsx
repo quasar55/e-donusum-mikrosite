@@ -53,9 +53,7 @@ export default function LegalLayout({
             {children}
           </div>
 
-          <p className="text-gray-400 text-xs mt-6 text-center">
-            Bu metin bilgilendirme amaçlıdır. Nihai hukuki değerlendirme için bir hukuk danışmanına başvurmanız önerilir.
-          </p>
+      
         </div>
       </main>
 
