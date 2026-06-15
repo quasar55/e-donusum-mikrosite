@@ -507,12 +507,16 @@ export default function Home() {
 
   <div className="max-w-6xl mx-auto relative z-10">
     <div className="text-center mb-10">
-      <span className="inline-block bg-cyan-400/20 text-cyan-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide uppercase">
-        TÜRKKEP Yetkili Başvuru Merkezi
+      <span className="inline-flex items-center gap-2 bg-yellow-400/15 text-yellow-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-4 tracking-wide border border-yellow-400/30">
+        <ShieldCheck size={14} /> Resmî Gazete 24 Temmuz 2025 — İş Kanunu m.109
       </span>
       <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-        Bordrolarınızı Hâlâ Kâğıtla mı Dağıtıyorsunuz?
+        Artık Resmî: İşçi Bildirimleri KEP ile Yasal Delil
       </h2>
+      <p className="text-cyan-200 text-base max-w-3xl mx-auto mb-5 font-medium">
+        4857 sayılı İş Kanunu'nun 109. maddesindeki düzenlemeyle, işveren bildirimleri hukuki delil
+        sağlayan KEP üzerinden yapılabilir hâle geldi. Bordro ve İK süreçlerinizi bu güvenceyle taşıyın.
+      </p>
       <p className="text-blue-100 text-lg max-w-3xl mx-auto">
         Kaybolan, yanlış ellere geçen kâğıt bordrolar işvereni iş davalarına karşı savunmasız bırakır.
         <span className="font-semibold text-white"> KEP İK®</span> ile bordrolarınızı yasal geçerli,
