@@ -1,5 +1,6 @@
 import { FileText, CheckCircle, ArrowRight, Shield, Zap, Clock, DollarSign } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Footer from './Footer';
 
 // Logo Component
 function Logo({ scrolled = false }: { scrolled?: boolean }) {
@@ -354,22 +355,8 @@ export default function EMaliye() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex justify-center gap-6 mb-4">
-            <a href="/" className="hover:text-white transition-colors">Ana Sayfa</a>
-            <a href="/e-maliye" className="hover:text-white transition-colors">e-Maliye</a>
-            <a href="/e-bilisim" className="hover:text-white transition-colors">e-Bilişim</a>
-            <a href="/hakkimizda" className="hover:text-white transition-colors">Hakkımızda</a>
-            <a href="/#iletisim" onClick={goToContact} className="hover:text-white transition-colors cursor-pointer">İletişim</a>
-          </div>
-          <p className="mb-2"><a href="/" className="hover:text-white transition-colors">e-donusum.company powered by insa.systems</a> | <a href="https://www.turkkep.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TÜRKKEP TBM</a> Yetkili Başvuru Merkezi</p>
-          <p className="text-sm">© 2025 Tüm Hakları Saklıdır</p>
-        </div>
-{/* WhatsApp Floating Button */}
-      <a href="https://wa.me/905332646642?text=Merhaba" target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-4 z-50 bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-2xl text-2xl">💬</a>
-      </footer>
+    {/* Footer */}
+      <Footer />
 
       {/* DEĞİŞİKLİK: Yukarı Ok Butonu - React state ile */}
       <button
